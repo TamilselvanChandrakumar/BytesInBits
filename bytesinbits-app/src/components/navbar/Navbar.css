@@ -1,16 +1,14 @@
 .navbar_container {
-  border: 1px solid black;
   padding: 0.5rem 0 0.2rem;
+  box-shadow: 5px 2px 13px 0 rgb(114, 112, 112);
 }
 .navbar_inner {
   width: auto;
   max-width: 1300px;
   margin: 0 auto 0 auto;
-  border: 1px solid blue;
   padding: 0 1rem 0 1rem;
 }
 .navbar {
-  border: 1px solid yellow;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,8 +50,10 @@
 .menu_items a:hover,
 a:active,
 a:focus {
+  border-bottom: 2px solid #ff4e2f;
   color: #ff922f;
 }
+
 @media (max-width: 992px) {
   .navbar_toggler {
     display: block;
@@ -79,11 +79,14 @@ a:focus {
   }
   .menu_items li {
     display: block;
-    border-bottom: #ff922f;
   }
   .menu_items a {
     color: white;
     display: block;
     padding: 1rem 0;
+  }
+  .menu_items a:hover {
+    border-width: medium;
+    border-bottom: 2px solid #ff4e2f;
   }
 }
