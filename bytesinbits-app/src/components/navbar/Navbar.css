@@ -63,7 +63,7 @@ a:focus {
     background-color: rgb(36, 34, 34);
     position: absolute;
     z-index: 5;
-    top: 83px;
+    top: 78px;
     bottom: 0;
     left: 0;
     transform: translateX(-250px);
