@@ -34,7 +34,6 @@
 }
 .menu_items li {
   /* border: 1px solid red; */
-  position: relative;
   list-style-type: none;
   position: relative;
   padding: 0 1rem;
@@ -63,10 +62,10 @@ a:focus {
   .menu_items {
     background-color: rgb(36, 34, 34);
     position: absolute;
+    z-index: 5;
     top: 83px;
     bottom: 0;
     left: 0;
-    z-index: 99;
     transform: translateX(-250px);
     transition: all 0.3 ease-in-out;
   }
