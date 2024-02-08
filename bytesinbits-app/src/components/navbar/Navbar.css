@@ -28,6 +28,9 @@
 .navbar_toggler {
   display: none;
 }
+.navbar_toggler:hover {
+  cursor: pointer;
+}
 .menu_items ul {
   margin: 0%;
   padding: 0%;
