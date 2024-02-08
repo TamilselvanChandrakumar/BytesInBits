@@ -33,9 +33,6 @@
   font-weight: 800;
   color: linear-gradient(90deg, #000000 0%, #222222 100%);
 }
-.header_content {
-  border: 1px solid black;
-}
 .header_content p {
   font-size: 18px;
   color: #212529;
@@ -112,7 +109,6 @@
 /* company card */
 
 .company_card_container {
-  border: 1px solid black;
   padding: 0 3rem 0;
 }
 .company_card_inner {
@@ -126,7 +122,15 @@
   background-color: #0e0c15;
   border: 1px solid brown;
   padding: 1.5rem;
-  border-radius: 20px 80px 20px 20px;
+  --notchSize: 50px;
+  -webkit-clip-path: polygon(
+    calc(100% - var(--notchSize)) 0,
+    100% var(--notchSize),
+    100% 100%,
+    0 100%,
+    0 0
+  );
+  border-radius: 25px 0 25px 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -150,6 +154,9 @@
   color: #ffffff;
   text-decoration: none;
 }
+.company_card a:hover {
+  color: #ff4e2f;
+}
 .company_card_btn img {
   width: 48px;
   height: 48px;
@@ -167,8 +174,13 @@
     gap: 2rem;
   }
   .company_card {
-    border-radius: 20px 50px 20px 20px;
+    --notchSize: 40px;
+    border-radius: 20px 0 20px 20px;
     padding: 1.3rem;
+  }
+  .company_card_btn img {
+    width: 40px;
+    height: 40px;
   }
 }
 @media (max-width: 600px) {
@@ -178,7 +190,76 @@
     gap: 1.5rem;
   }
   .company_card {
-    border-radius: 20px 30px 20px 20px;
+    --notchSize: 30px;
+    border-radius: 20px 0 20px 20px;
     padding: 1rem;
+  }
+  .company_card_btn img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* home course details */
+.home_course_container {
+  margin-top: 100px;
+  padding: 0 3rem 0;
+}
+.home_course_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.home_course_1 {
+  width: 380px;
+}
+.home_course_2 {
+  width: 380px;
+}
+.home_course_3 {
+  width: 380px;
+}
+.home_course {
+  border: 1px solid brown;
+  background-color: #1b1919;
+  padding: 0 1.5rem 0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.home_course h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+}
+.home_course p {
+  color: #ada8c3;
+  font-weight: 300;
+  font-size: 16px;
+}
+.home_course img {
+  width: 61px;
+  height: 61px;
+  align-self: flex-end;
+  transition: all 0.3s linear;
+}
+.home_course img:hover {
+  transform: translateX(10px);
+}
+@media (max-width: 920px) {
+  .home_course img {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media (max-width: 600px) {
+  .home_course_container {
+    margin-top: 50px;
+  }
+  .home_course img {
+    width: 40px;
+    height: 40px;
   }
 }

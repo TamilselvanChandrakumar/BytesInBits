@@ -7,6 +7,7 @@ import career from "../../assets/companycard/careergrowth.png";
 import message from "../../assets/companycard/message.png";
 import support from "../../assets/companycard/studentsupport.png";
 import vector from "../../assets/companycard/Vector.png";
+import golink from "../../assets/companycard/linkimg.png";
 
 const Home = () => {
   return (
@@ -22,8 +23,8 @@ const Home = () => {
             <div className="header_content">
               <p>
                 50,000+ uplifted through our hybrid classroom & online training,
+                <span>enriched by real-time projects and job support.</span>
               </p>
-              <p>enriched by real-time projects and job support.</p>
             </div>
             <div className="header_btn">
               <button className="header_demobtn">
@@ -96,6 +97,38 @@ const Home = () => {
                 Explore more<img id="vectorimg" src={vector} alt=""></img>
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="home_course_container">
+        <div className="home_course_inner">
+          <div className="home_course home_course_1">
+            <h2>Advance Embedded System</h2>
+            <p>
+              Advanced Embedded System Programming is a course designed for
+              individuals interested in learning. This course covers topics such
+              as device drivers, advanced memory management techniques.
+            </p>
+            <img src={golink} alt=""></img>
+          </div>
+          <div className="home_course home_course_2">
+            <h2>Python FullStack Training</h2>
+            <p>
+              Python Programming is a high-level, interpreted programming
+              language that focuses on code readability and conciseness. It is
+              easy to learn and widely used for web development, scientific
+              computing,
+            </p>
+            <img src={golink} alt=""></img>
+          </div>
+          <div className="home_course home_course_3">
+            <h2>Best Qualified Tutors</h2>
+            <p>
+              Explore the power of MATLAB with our comprehensive course. Learn
+              the fundamentals of programming, data analysis, and advanced
+              techniques.
+            </p>
+            <img src={golink} alt=""></img>
           </div>
         </div>
       </section>
