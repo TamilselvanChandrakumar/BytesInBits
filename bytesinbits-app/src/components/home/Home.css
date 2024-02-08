@@ -263,10 +263,20 @@
     height: 40px;
   }
 }
-
+/* all courses  */
+.allcourses_btn {
+  width: 316px;
+  height: 71px;
+  border-radius: 76px;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #393939;
+  background-color: #ffb400;
+  border: none;
+}
 /* all courses  */
 .allcourses_container {
-  border: 1px solid black;
   padding: 0 3rem 0;
   margin-top: 60px;
 }
@@ -278,11 +288,16 @@
 .allcourses_inner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, minmax(250px, 1fr));
   gap: 4rem;
 }
 .individual_course {
-  border: 1px solid blue;
+  background-color: #cccccc4f;
+  border-color: #ffffff;
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .individual_course h3 {
   font-weight: 700;
@@ -291,6 +306,7 @@
 }
 .individual_course_details {
   display: flex;
+  gap: 3rem;
 }
 .individual_course_details p {
   display: flex;
@@ -306,6 +322,7 @@
   gap: 1rem;
 }
 .curriculam_btn {
+  border: none;
   width: 143px;
   height: 40px;
   border-radius: 8px;
@@ -314,6 +331,9 @@
   text-align: center;
   background-color: #222222;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .enrollnow_btn {
   width: 143px;
@@ -323,9 +343,71 @@
   size: 14px;
   text-align: center;
   border-color: #7928ca;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .individual_course_content {
   font-weight: 400;
   font-size: 14px;
   color: #393939;
+}
+@media (max-width: 1000px) {
+  .allcourses_inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+@media (max-width: 1150px) {
+  .allcourses_btn {
+    width: 270px;
+    height: 65px;
+    border-radius: 76px;
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+    color: #393939;
+    background-color: #ffb400;
+    border: none;
+  }
+  .individual_course_details {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+  .individual_course_content {
+    margin-top: 1.5rem;
+  }
+  .individual_course_button {
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .allcourses_btn {
+    width: 250px;
+    height: 50px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #393939;
+    background-color: #ffb400;
+    border: none;
+  }
+  .individual_course_details {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .individual_course_content {
+    margin-top: 1rem;
+  }
+  .individual_course_button {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

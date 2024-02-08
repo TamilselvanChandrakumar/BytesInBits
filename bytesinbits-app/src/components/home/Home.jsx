@@ -136,7 +136,7 @@ const Home = () => {
           </div>
         </div>
         <div className="allcourses">
-          <button>All Courses</button>
+          <button className="allcourses_btn">All Courses</button>
         </div>
       </section>
       <section className="allcourses_container">
@@ -161,10 +161,10 @@ const Home = () => {
             </p>
             <div className="individual_course_button">
               <button className="curriculam_btn">
-                <img></img> Curriculum
+                <img src={downloadimg} alt=""></img> Curriculum
               </button>
               <button className="enrollnow_btn">
-                <img></img>Enroll Now
+                <img src={enroll} alt=""></img>Enroll Now
               </button>
             </div>
           </div>
@@ -188,10 +188,10 @@ const Home = () => {
             </p>
             <div className="individual_course_button">
               <button className="curriculam_btn">
-                <img></img> Curriculum
+                <img src={downloadimg} alt=""></img> Curriculum
               </button>
               <button className="enrollnow_btn">
-                <img></img>Enroll Now
+                <img src={enroll} alt=""></img>Enroll Now
               </button>
             </div>
           </div>
@@ -215,10 +215,10 @@ const Home = () => {
             </p>
             <div className="individual_course_button">
               <button className="curriculam_btn">
-                <img></img> Curriculum
+                <img src={downloadimg} alt=""></img> Curriculum
               </button>
               <button className="enrollnow_btn">
-                <img></img>Enroll Now
+                <img src={enroll} alt=""></img>Enroll Now
               </button>
             </div>
           </div>
@@ -242,10 +242,10 @@ const Home = () => {
             </p>
             <div className="individual_course_button">
               <button className="curriculam_btn">
-                <img></img> Curriculum
+                <img src={downloadimg} alt=""></img>Curriculum
               </button>
               <button className="enrollnow_btn">
-                <img></img>Enroll Now
+                <img src={enroll} alt=""></img>Enroll Now
               </button>
             </div>
           </div>
@@ -269,10 +269,10 @@ const Home = () => {
             </p>
             <div className="individual_course_button">
               <button className="curriculam_btn">
-                <img></img> Curriculum
+                <img src={downloadimg} alt=""></img> Curriculum
               </button>
               <button className="enrollnow_btn">
-                <img></img>Enroll Now
+                <img src={enroll} alt=""></img>Enroll Now
               </button>
             </div>
           </div>
