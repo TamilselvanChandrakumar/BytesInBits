@@ -8,7 +8,11 @@ import message from "../../assets/companycard/message.png";
 import support from "../../assets/companycard/studentsupport.png";
 import vector from "../../assets/companycard/Vector.png";
 import golink from "../../assets/companycard/linkimg.png";
-
+import downloadimg from "../../assets/allcoursesimg/download.png";
+import duration from "../../assets/allcoursesimg/duration.png";
+import enroll from "../../assets/allcoursesimg/enroll.png";
+import liveimg from "../../assets/allcoursesimg/live.png";
+import rating from "../../assets/allcoursesimg/ratingstar.png";
 const Home = () => {
   return (
     <>
@@ -129,6 +133,148 @@ const Home = () => {
               techniques.
             </p>
             <img src={golink} alt=""></img>
+          </div>
+        </div>
+        <div className="allcourses">
+          <button>All Courses</button>
+        </div>
+      </section>
+      <section className="allcourses_container">
+        <div className="allcourses_inner">
+          <div className="individual_course">
+            <h3>Python</h3>
+            <div className="individual_course_details">
+              <p>
+                {" "}
+                <img src={duration} alt=""></img>2 Months
+              </p>
+              <p>
+                <img src={liveimg} alt=""></img> 5 Live Projects
+              </p>
+              <p>
+                <img src={rating} alt=""></img> 4.8/5
+              </p>
+            </div>
+            <p className="individual_course_content">
+              Python training emphasises on programming concepts and developing
+              applications using Python's user-friendly syntax.
+            </p>
+            <div className="individual_course_button">
+              <button className="curriculam_btn">
+                <img></img> Curriculum
+              </button>
+              <button className="enrollnow_btn">
+                <img></img>Enroll Now
+              </button>
+            </div>
+          </div>
+          <div className="individual_course">
+            <h3>Data Science</h3>
+            <div className="individual_course_details">
+              <p>
+                {" "}
+                <img src={duration} alt=""></img>2 Months
+              </p>
+              <p>
+                <img src={liveimg} alt=""></img> 5 Live Projects
+              </p>
+              <p>
+                <img src={rating} alt=""></img> 4.7/5
+              </p>
+            </div>
+            <p className="individual_course_content">
+              AWS training focuses on cloud computing with core services,
+              architecture, security, and best practices.
+            </p>
+            <div className="individual_course_button">
+              <button className="curriculam_btn">
+                <img></img> Curriculum
+              </button>
+              <button className="enrollnow_btn">
+                <img></img>Enroll Now
+              </button>
+            </div>
+          </div>
+          <div className="individual_course">
+            <h3>Embedded</h3>
+            <div className="individual_course_details">
+              <p>
+                {" "}
+                <img src={duration} alt=""></img>2 Months
+              </p>
+              <p>
+                <img src={liveimg} alt=""></img>6 Live Projects
+              </p>
+              <p>
+                <img src={rating} alt=""></img> 4.9/5
+              </p>
+            </div>
+            <p className="individual_course_content">
+              Java training focuses on programming basics, OOP, data structures,
+              APIs, and app development.
+            </p>
+            <div className="individual_course_button">
+              <button className="curriculam_btn">
+                <img></img> Curriculum
+              </button>
+              <button className="enrollnow_btn">
+                <img></img>Enroll Now
+              </button>
+            </div>
+          </div>
+          <div className="individual_course">
+            <h3>IOT</h3>
+            <div className="individual_course_details">
+              <p>
+                {" "}
+                <img src={duration} alt=""></img>2 Months
+              </p>
+              <p>
+                <img src={liveimg} alt=""></img> 5 Live Projects
+              </p>
+              <p>
+                <img src={rating} alt=""></img>4.8/5
+              </p>
+            </div>
+            <p className="individual_course_content">
+              React JS training covers UI building, component architecture,
+              state management, hooks, and modern practices.
+            </p>
+            <div className="individual_course_button">
+              <button className="curriculam_btn">
+                <img></img> Curriculum
+              </button>
+              <button className="enrollnow_btn">
+                <img></img>Enroll Now
+              </button>
+            </div>
+          </div>
+          <div className="individual_course">
+            <h3>Cloud Computing</h3>
+            <div className="individual_course_details">
+              <p>
+                {" "}
+                <img src={duration} alt=""></img>2 Months
+              </p>
+              <p>
+                <img src={liveimg} alt=""></img> 5 Live Projects
+              </p>
+              <p>
+                <img src={rating} alt=""></img> 4.9/5
+              </p>
+            </div>
+            <p className="individual_course_content">
+              Salesforce training focuses on CRM software, Salesforce platform
+              functionality, data management and application development.
+            </p>
+            <div className="individual_course_button">
+              <button className="curriculam_btn">
+                <img></img> Curriculum
+              </button>
+              <button className="enrollnow_btn">
+                <img></img>Enroll Now
+              </button>
+            </div>
           </div>
         </div>
       </section>
