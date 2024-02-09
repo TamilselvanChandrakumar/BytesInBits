@@ -20,6 +20,10 @@ import buildimg from "../../assets/buildimg/buildproject.png";
 import viewimg from "../../assets/buildimg/viewcourses.png";
 import nextarrow from "../../assets/buildimg/nextarrow.png";
 import getjobworld from "../../assets/getjobimg/getjobworld.png";
+import github from "../../assets/getjobimg/github.png";
+import linkedin from "../../assets/getjobimg/linkedin.png";
+import resume from "../../assets/getjobimg/resume.png";
+import helpapply from "../../assets/getjobimg/helpapply.png";
 const Home = () => {
   return (
     <>
@@ -370,7 +374,7 @@ const Home = () => {
           <div className="getjob_content_container">
             <div className="getjob_content">
               <p>
-                <img></img>
+                <img src={github} alt=""></img>
               </p>
               <h3>GitHub Profile</h3>
               <p>
@@ -380,7 +384,7 @@ const Home = () => {
             </div>
             <div className="getjob_content">
               <p>
-                <img></img>
+                <img src={linkedin} alt=""></img>
               </p>
               <h3>LinkedIn Profile</h3>
               <p>
@@ -390,7 +394,7 @@ const Home = () => {
             </div>
             <div className="getjob_content">
               <p>
-                <img></img>
+                <img src={resume} alt=""></img>
               </p>
               <h3>Resume Preparation</h3>
               <p>
@@ -400,7 +404,7 @@ const Home = () => {
             </div>
             <div className="getjob_content">
               <p>
-                <img></img>
+                <img src={helpapply} alt=""></img>
               </p>
               <h3>Help in Applying</h3>
               <p>
@@ -411,7 +415,7 @@ const Home = () => {
             <div className="course_advisor">
               <button className="course_advisor_btn">
                 {" "}
-                Contact Course Advisor
+                <img src={viewimg} alt=""></img>Contact Course Advisor
               </button>
             </div>
           </div>

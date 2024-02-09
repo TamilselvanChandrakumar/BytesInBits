@@ -95,6 +95,9 @@
   }
 }
 @media (max-width: 500px) {
+  .home_header_container {
+    padding: 1rem;
+  }
   .header_btn {
     display: flex;
     flex-direction: column;
@@ -184,6 +187,9 @@
   }
 }
 @media (max-width: 600px) {
+  .company_card_container {
+    padding: 0 1rem 0 1rem;
+  }
   .company_card_inner {
     display: grid;
     grid-template-columns: 1fr;
@@ -255,6 +261,10 @@
   }
 }
 @media (max-width: 600px) {
+  .home_course_container {
+    margin-top: 100px;
+    padding: 0 1rem 0 1rem;
+  }
   .home_course_container {
     margin-top: 50px;
   }
@@ -386,6 +396,9 @@
   }
 }
 @media (max-width: 600px) {
+  .allcourses_container {
+    padding: 0 0 0 0;
+  }
   .allcourses_btn {
     width: 250px;
     height: 50px;
@@ -510,6 +523,9 @@
   }
 }
 @media (max-width: 600px) {
+  .build_contaienr {
+    padding: 0 1rem 0 1rem;
+  }
   .header_build {
     margin-top: 20px;
   }
@@ -547,19 +563,110 @@
     gap: 0.5rem;
   }
 }
+
+/* get job button */
 .getjob_header {
-  border: 1px solid black;
-  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.getjob_btn {
+  width: 171px;
+  height: 71px;
+  border: none;
+  background-color: #ffb400;
+  font-weight: 700;
+  font-size: 30px;
+  border-radius: 50px;
 }
 /* get job  */
+.getjob_header {
+  position: relative;
+}
 .getjob_inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .getjob_content_container {
-  border: 1px solid brown;
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }
-.getjob_image {
-  border: 1px solid blue;
-  flex: 1;
+.getjob_content {
+  padding: 0 2rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.getjob_image img {
+  position: absolute;
+  max-width: 100%;
+  top: -150px;
+  right: 0%;
+}
+.course_advisor_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  width: 225px;
+  height: 40px;
+  border-radius: 8px;
+  border-color: #7928ca;
+  color: #231f20;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 4rem;
+}
+@media (max-width: 750px) {
+  .getjob_inner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .getjob_image img {
+    position: absolute;
+    max-width: 100%;
+    top: -100px;
+    right: 0%;
+    opacity: 0.8;
+  }
+  .getjob_content_container {
+    gap: 2rem;
+  }
+  .getjob_btn {
+    font-size: 25px;
+    width: 160px;
+    height: 60px;
+    border-radius: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .getjob_content {
+    padding: 0 1rem 0 2rem;
+  }
+  .course_advisor_btn {
+    margin-left: 2rem;
+  }
+  .getjob_image img {
+    position: absolute;
+    max-width: 100%;
+    top: 100px;
+    right: 0%;
+    opacity: 0.9;
+  }
+  .getjob_content_container {
+    gap: 1rem;
+  }
+  .course_advisor_btn {
+    gap: 0.4rem;
+    width: 190px;
+    height: 30px;
+  }
+  .getjob_btn {
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 35px;
+  }
 }
