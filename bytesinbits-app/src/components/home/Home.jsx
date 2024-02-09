@@ -424,6 +424,29 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="whyBytes_container">
+        <h2 className="whybytes_text">Why Bytesinbits</h2>
+        <div className="whyBytes_inner">
+          <div className="numbers_container">
+            <div className="numbers_content">
+              <h1>5000+</h1>
+              <p>Learners</p>
+            </div>
+            <div className="numbers_content">
+              <h1>500+</h1>
+              <p>Batches</p>
+            </div>
+            <div className="numbers_content">
+              <h1>14+</h1>
+              <p>Years</p>
+            </div>
+            <div className="numbers_content">
+              <h1>24/7</h1>
+              <p>Support</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
