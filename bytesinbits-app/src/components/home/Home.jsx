@@ -13,6 +13,12 @@ import duration from "../../assets/allcoursesimg/duration.png";
 import enroll from "../../assets/allcoursesimg/enroll.png";
 import liveimg from "../../assets/allcoursesimg/live.png";
 import rating from "../../assets/allcoursesimg/ratingstar.png";
+import lms from "../../assets/buildimg/lms.png";
+import hrms from "../../assets/buildimg/hrms.png";
+import crm from "../../assets/buildimg/lms.png";
+import buildimg from "../../assets/buildimg/buildproject.png";
+import viewimg from "../../assets/buildimg/viewcourses.png";
+import nextarrow from "../../assets/buildimg/nextarrow.png";
 const Home = () => {
   return (
     <>
@@ -273,6 +279,80 @@ const Home = () => {
               </button>
               <button className="enrollnow_btn">
                 <img src={enroll} alt=""></img>Enroll Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="build_contaienr">
+        <div className="build_inner">
+          <div className="build_project_img">
+            <img src={lms} alt=""></img>
+          </div>
+          <div className="build_project_content">
+            <p>
+              <img className="build_img" src={buildimg}></img>
+            </p>
+            <h4>LMS Project</h4>
+            <p>
+              An LMS project develops a digital platform for online learning,
+              featuring course creation, content management, user tracking,
+              assessments, and reporting, aimed at enhancing educational
+              interaction.
+            </p>
+
+            <div className="build_btn">
+              <button className="viewproject_btn">
+                View Project <img src={nextarrow} alt=""></img>{" "}
+              </button>
+              <button className="viewallcourses_btn">
+                View All Courses <img src={viewimg} alt=""></img>{" "}
+              </button>
+            </div>
+          </div>
+          <div className="build_project_content">
+            <p>
+              <img className="build_img" src={buildimg}></img>
+            </p>
+            <h4>HRMS Project</h4>
+            <p>
+              The HRMS project develops a digital system for managing HR
+              functions like employee data, payroll, recruitment, and
+              performance, aiming to streamline processes and enhance
+              organizational efficiency.
+            </p>
+            <div className="build_btn">
+              <button className="viewproject_btn">
+                View Project <img src={nextarrow} alt=""></img>{" "}
+              </button>
+              <button className="viewallcourses_btn">
+                View All Courses <img src={viewimg} alt=""></img>{" "}
+              </button>
+            </div>
+          </div>
+          <div className="build_project_img">
+            <img src={crm} alt=""></img>
+          </div>
+          <div className="build_project_img">
+            <img src={hrms} alt=""></img>
+          </div>
+          <div className="build_project_content">
+            <p>
+              <img className="build_img" src={buildimg}></img>
+            </p>
+            <h4>CRM Project</h4>
+            <p>
+              A CRM project develops a system to manage company interactions
+              with customers, incorporating tools for contact, sales,
+              productivity, and support to enhance service, drive sales, and
+              boost retention.
+            </p>
+            <div className="build_btn">
+              <button className="viewproject_btn">
+                View Project <img src={nextarrow} alt=""></img>{" "}
+              </button>
+              <button className="viewallcourses_btn">
+                View All Courses <img src={viewimg} alt=""></img>{" "}
               </button>
             </div>
           </div>
