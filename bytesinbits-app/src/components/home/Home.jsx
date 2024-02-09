@@ -447,6 +447,75 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <div className="keyfeature_text">Key Features</div>
+      <section className="keyfeature_container">
+        <div className="keyfeature_inner">
+          <div className="keyfeature">
+            <h2>
+              <img src="" alt=""></img>
+              Real Time Practice Labs
+            </h2>
+            <p>
+              Every Vercel deploy is immutable, and domains act as pointers.
+              Reverting and deploying is an atomic swap operation.
+            </p>
+          </div>
+          <div className="keyfeature">
+            <h2>
+              <img src="" alt=""></img>
+              Physical And Virtual Online Classrooms
+            </h2>
+            <p>
+              Our Edge intelligently preserves multiple concurrent versions of
+              an app, including all their JS, CSS, and other assets, to not
+              interrupt existing traffic as you ship.
+            </p>
+          </div>
+          <div className="keyfeature">
+            <h2>
+              <img src="" alt=""></img>
+              24/7 Support On Slack
+            </h2>
+            <p>
+              Deploying and reverting ensures the successful provisioning and
+              acquisition of resources and metadata, to ensure user traffic
+              never slows down or sees errors.
+            </p>
+          </div>
+          <div className="keyfeature">
+            <h2>
+              <img src="" alt=""></img>
+              Job & Interview Assistance
+            </h2>
+            <p>
+              Every Vercel deploy is immutable, and domains act as pointers.
+              Reverting and deploying is an atomic swap operation.
+            </p>
+          </div>
+          <div className="keyfeature">
+            <h2>
+              <img src="" alt=""></img>
+              Live Projects With Our Industry Partners
+            </h2>
+            <p>
+              Our Edge intelligently preserves multiple concurrent versions of
+              an app, including all their JS, CSS, and other assets, to not
+              interrupt existing traffic as you ship.
+            </p>
+          </div>
+          <div className="keyfeature">
+            <h2>
+              <img src="" alt=""></img>
+              Internship After Course
+            </h2>
+            <p>
+              Deploying and reverting ensures the successful provisioning and
+              acquisition of resources and metadata, to ensure user traffic
+              never slows down or sees errors.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
