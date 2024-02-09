@@ -19,6 +19,7 @@ import crm from "../../assets/buildimg/lms.png";
 import buildimg from "../../assets/buildimg/buildproject.png";
 import viewimg from "../../assets/buildimg/viewcourses.png";
 import nextarrow from "../../assets/buildimg/nextarrow.png";
+import getjobworld from "../../assets/getjobimg/getjobworld.png";
 const Home = () => {
   return (
     <>
@@ -284,6 +285,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <div className="header_build">
+        <button className="header_build_btn">Build</button>
+      </div>
       <section className="build_contaienr">
         <div className="build_inner">
           <div className="build_project_img">
@@ -355,6 +359,64 @@ const Home = () => {
                 View All Courses <img src={viewimg} alt=""></img>{" "}
               </button>
             </div>
+          </div>
+        </div>
+      </section>
+      <div className="getjob_header">
+        <button className="getjob_btn">Get Job</button>
+      </div>
+      <section className="getjob_header">
+        <div className="getjob_inner">
+          <div className="getjob_content_container">
+            <div className="getjob_content">
+              <p>
+                <img></img>
+              </p>
+              <h3>GitHub Profile</h3>
+              <p>
+                Guidance on creating and maintaining a professional GitHub
+                profile to showcase technical projects and coding prowess.
+              </p>
+            </div>
+            <div className="getjob_content">
+              <p>
+                <img></img>
+              </p>
+              <h3>LinkedIn Profile</h3>
+              <p>
+                Assistance in crafting a compelling LinkedIn profile for
+                networking and visibility among recruiters.
+              </p>
+            </div>
+            <div className="getjob_content">
+              <p>
+                <img></img>
+              </p>
+              <h3>Resume Preparation</h3>
+              <p>
+                Expert advice on resume writing to effectively highlight skills,
+                experience, and achievements.
+              </p>
+            </div>
+            <div className="getjob_content">
+              <p>
+                <img></img>
+              </p>
+              <h3>Help in Applying</h3>
+              <p>
+                Support in identifying suitable job opportunities and navigating
+                the application process.
+              </p>
+            </div>
+            <div className="course_advisor">
+              <button className="course_advisor_btn">
+                {" "}
+                Contact Course Advisor
+              </button>
+            </div>
+          </div>
+          <div className="getjob_image">
+            <img src={getjobworld} alt=""></img>
           </div>
         </div>
       </section>

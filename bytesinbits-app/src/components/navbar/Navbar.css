@@ -38,7 +38,7 @@
 .menu_items li {
   /* border: 1px solid red; */
   list-style-type: none;
-  position: relative;
+
   padding: 0 1rem;
   display: inline-block;
 }
