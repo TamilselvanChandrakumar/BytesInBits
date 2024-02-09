@@ -24,6 +24,9 @@ import github from "../../assets/getjobimg/github.png";
 import linkedin from "../../assets/getjobimg/linkedin.png";
 import resume from "../../assets/getjobimg/resume.png";
 import helpapply from "../../assets/getjobimg/helpapply.png";
+import docimg from "../../assets/keyfeatures/docimg.png";
+import lightning from "../../assets/keyfeatures/lightning.png";
+import star from "../../assets/keyfeatures/star.png";
 const Home = () => {
   return (
     <>
@@ -447,12 +450,14 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className="keyfeature_text">Key Features</div>
+      <div className="keyfeature_text">
+        <h1>Key Features</h1>
+      </div>
       <section className="keyfeature_container">
         <div className="keyfeature_inner">
           <div className="keyfeature">
             <h2>
-              <img src="" alt=""></img>
+              <img src={star} alt=""></img>
               Real Time Practice Labs
             </h2>
             <p>
@@ -462,7 +467,7 @@ const Home = () => {
           </div>
           <div className="keyfeature">
             <h2>
-              <img src="" alt=""></img>
+              <img src={docimg} alt=""></img>
               Physical And Virtual Online Classrooms
             </h2>
             <p>
@@ -473,7 +478,7 @@ const Home = () => {
           </div>
           <div className="keyfeature">
             <h2>
-              <img src="" alt=""></img>
+              <img src={lightning} alt=""></img>
               24/7 Support On Slack
             </h2>
             <p>
@@ -484,7 +489,7 @@ const Home = () => {
           </div>
           <div className="keyfeature">
             <h2>
-              <img src="" alt=""></img>
+              <img src={star} alt=""></img>
               Job & Interview Assistance
             </h2>
             <p>
@@ -494,7 +499,7 @@ const Home = () => {
           </div>
           <div className="keyfeature">
             <h2>
-              <img src="" alt=""></img>
+              <img src={lightning} alt=""></img>
               Live Projects With Our Industry Partners
             </h2>
             <p>
@@ -505,7 +510,7 @@ const Home = () => {
           </div>
           <div className="keyfeature">
             <h2>
-              <img src="" alt=""></img>
+              <img src={docimg} alt=""></img>
               Internship After Course
             </h2>
             <p>
