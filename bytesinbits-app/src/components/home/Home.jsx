@@ -653,11 +653,11 @@ const Home = () => {
           </div>
           <div className="last_button">
             <button className="last_demo_btn">
-              <img src=""></img> Demo
+              <img src={demoimg} alt="" />
+              Demo
             </button>
             <button className="last_get_btn">
-              {" "}
-              <img></img>Get In Touch
+              <img src={viewimg} alt=""></img>Get In Touch{" "}
             </button>
           </div>
         </div>

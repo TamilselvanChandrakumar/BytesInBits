@@ -643,7 +643,7 @@
 }
 @media (max-width: 500px) {
   .getjob_content {
-    padding: 0 1rem 0 2rem;
+    padding: 0 1rem 0 1rem;
   }
   .course_advisor_btn {
     margin-left: 2rem;
@@ -709,7 +709,7 @@
     font-size: 20px;
   }
   .whyBytes_container {
-    padding: 0 1rem 0 2rem;
+    padding: 0 1rem 0 1rem;
   }
   .numbers_container h1 {
     font-size: 40px;
@@ -797,7 +797,7 @@
     font-size: 16px;
   }
   .keyfeature_container {
-    padding: 0 1rem 0 2rem;
+    padding: 0 1rem 0 1rem;
   }
   .keyfeature_inner {
     display: grid;
@@ -916,12 +916,8 @@
   }
 }
 @media (max-width: 600px) {
-  .batch_schedule {
-    margin-top: 35px;
-    padding-left: 2rem;
-  }
   .batch_container {
-    padding: 0 1rem 0 2rem;
+    padding: 0 1rem 0 1rem;
     margin-top: 35px;
   }
   .batch {
@@ -947,7 +943,6 @@
 /* last content */
 
 .last_content_container {
-  border: 1px solid black;
   margin-top: 70px;
   padding: 0 3rem 0;
 }
@@ -955,7 +950,6 @@
 .last_content_inner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(2, minmax(100px, 1fr)); */
   align-items: center;
   justify-items: center;
 }
@@ -989,10 +983,15 @@
   gap: 1rem;
   justify-content: center;
 }
+
 .last_button button {
   width: 180px;
   height: 40px;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 .last_demo_btn {
   background-color: #000000;
@@ -1019,7 +1018,7 @@
     gap: 0.3rem;
   }
   .last_content_container {
-    padding: 0 1rem 0 2rem;
+    padding: 0 1rem 0 1rem;
   }
   .last_content_inner {
     display: grid;
