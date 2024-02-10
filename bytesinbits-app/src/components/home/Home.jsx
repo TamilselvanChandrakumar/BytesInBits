@@ -27,6 +27,8 @@ import helpapply from "../../assets/getjobimg/helpapply.png";
 import docimg from "../../assets/keyfeatures/docimg.png";
 import lightning from "../../assets/keyfeatures/lightning.png";
 import star from "../../assets/keyfeatures/star.png";
+import calendor from "../../assets/batchimg/calendor.png";
+import time from "../../assets/batchimg/time.png";
 const Home = () => {
   return (
     <>
@@ -518,6 +520,121 @@ const Home = () => {
               acquisition of resources and metadata, to ensure user traffic
               never slows down or sees errors.
             </p>
+          </div>
+        </div>
+      </section>
+      <div className="batch_schedule_text">
+        <h1>Upcoming Batch Schedule</h1>
+      </div>
+      <section className="batch_container">
+        <div className="batch_inner">
+          <div className="batch">
+            <div className="batch_title">
+              {" "}
+              <h2>Week Day Batches</h2>
+              <p>(Mon-Fri)</p>
+            </div>
+            <div className="batch_schedule">
+              <div className="batch_date">
+                <div>
+                  <div>
+                    <img src={calendor}></img>
+                  </div>
+                </div>
+                <div>
+                  <h4>5th Feb 2024</h4>
+                  <p>Monday</p>
+                </div>
+              </div>
+              <div className="batch_time">
+                <div>
+                  <img src={time}></img>
+                </div>
+                <div>
+                  <h4>8 AM (IST)</h4>
+                  <p>1hr-1:30hr / Per Session</p>
+                </div>
+              </div>
+            </div>
+            <div className="batch_btn">
+              <button>
+                <img src={viewimg} alt=""></img> Get Free Course Demo
+              </button>
+            </div>
+          </div>
+          <div className="batch">
+            <div className="batch_title">
+              <h2>Week Day Batches</h2>
+              <p>(Mon-Fri)</p>
+            </div>
+            <div className="batch_schedule">
+              <div className="batch_date">
+                <div>
+                  <img src={calendor} alt=""></img>
+                </div>{" "}
+                <div>
+                  <h4>7th Feb 2024</h4>
+                  <p>Wednesday</p>
+                </div>
+              </div>
+              <div className="batch_time">
+                {" "}
+                <div>
+                  <img src={time} alt=""></img>
+                </div>
+                <div>
+                  {" "}
+                  <h4>10 AM (IST)</h4>
+                  <p>1hr-1:30hr / Per Session</p>
+                </div>
+              </div>
+            </div>
+            <div className="batch_btn">
+              <button>
+                {" "}
+                <img src={viewimg} alt=""></img>Get Free Course Demo
+              </button>
+            </div>
+          </div>
+          <div className="batch">
+            <div className="batch_title">
+              <h2>Week Day Batches</h2>
+              <p>(Mon-Fri)</p>
+            </div>
+            <div className="batch_schedule">
+              <div className="batch_date">
+                <div>
+                  <img src={calendor}></img>
+                </div>{" "}
+                <div>
+                  {" "}
+                  <h4>9th Feb 2024</h4>
+                  <p>Friday</p>
+                </div>
+              </div>
+              <div className="batch_time">
+                <div>
+                  <img src={time}></img>
+                </div>
+                <div>
+                  <h4>12 PM (IST)</h4>
+                  <p>1hr-1:30hr / Per Session</p>
+                </div>
+              </div>
+            </div>
+            <div className="batch_btn">
+              <button>
+                <img src={viewimg} alt=""></img> Get Free Course Demo
+              </button>
+            </div>
+          </div>
+          <div className="batch_card">
+            <h2>Can’t find a batch you were looking for?</h2>
+            <div className="batch_btn">
+              <button>
+                <img src={viewimg} alt=""></img> Get Free Course Demo
+              </button>
+            </div>
           </div>
         </div>
       </section>
