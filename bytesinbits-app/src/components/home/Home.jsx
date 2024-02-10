@@ -638,6 +638,30 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="last_content_container">
+        <div className="last_content_inner">
+          <div className="last_content">
+            <div className="last_content_title">
+              <h1>Learn,</h1>
+              <h2>Build</h2>
+              <h3>Get Job.</h3>
+            </div>
+            <p>
+              50,000+ uplifted through our hybrid classroom & online training,
+              enriched by real-time projects and job support.
+            </p>
+          </div>
+          <div className="last_button">
+            <button className="last_demo_btn">
+              <img src=""></img> Demo
+            </button>
+            <button className="last_get_btn">
+              {" "}
+              <img></img>Get In Touch
+            </button>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
