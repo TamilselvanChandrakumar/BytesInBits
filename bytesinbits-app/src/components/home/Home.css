@@ -206,6 +206,9 @@
     width: 35px;
     height: 35px;
   }
+  .home_course {
+    padding: 0.7rem 1.2rem 0.7rem;
+  }
 }
 
 /* home course details */
@@ -222,7 +225,7 @@
 
 .home_course {
   background-color: #1b1919;
-  padding: 0 1.5rem 0;
+  padding: 1rem 1.5rem 1rem;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
