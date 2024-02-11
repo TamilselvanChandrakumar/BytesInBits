@@ -1,14 +1,15 @@
 .navbar_container {
   padding: 0.5rem 0 0.2rem;
   box-shadow: 5px 2px 13px 0 rgb(114, 112, 112);
+  background-color: #ffffff;
 }
-/* .sticky {
-  position: fixed;
+.sticky {
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-} */
+}
 .navbar_inner {
   width: auto;
   max-width: 1300px;
@@ -47,7 +48,6 @@
   list-style-type: none;
   padding: 0 1rem;
   display: inline-block;
-  position: relative;
 }
 .menu_items a {
   text-decoration-line: none;
@@ -75,19 +75,24 @@ a:focus {
     top: 78px;
     bottom: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 999;
     transform: translateX(-250px);
     transition: all 0.3 ease-in-out;
   }
   .active {
-    max-width: 250px;
     min-width: 250px;
+    height: 100vh;
     padding: 2rem;
     box-sizing: border-box;
     transform: translateX(0px);
   }
+  .menu_items ul {
+    background-color: rgb(36, 34, 34);
+  }
+
   .menu_items li {
     display: block;
+    background-color: rgb(36, 34, 34);
   }
   .menu_items a {
     color: white;
