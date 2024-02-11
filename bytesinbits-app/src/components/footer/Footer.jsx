@@ -1,16 +1,24 @@
 import React from "react";
 import "../../components/footer/Footer.css";
 import footerworld from "../../assets/footerimg/footerworld.png";
+import social from "../../assets/footerimg/social.png";
+import social1 from "../../assets/footerimg/social1.png";
+import social2 from "../../assets/footerimg/social2.png";
+import social3 from "../../assets/footerimg/social3.png";
+import social4 from "../../assets/footerimg/social4.png";
+import social5 from "../../assets/footerimg/social5.png";
 const Footer = () => {
   return (
     <footer className="footer_container">
       <div className="footer_inner">
         <div className="footer_content_container">
           <div className="footer_content">
-            <h1>Have a Good Web </h1>
-            <h1>
-              <span className="design_text"> Designe</span> Today
-            </h1>
+            <div className="footer_title">
+              <h1>Have a Good Web </h1>
+              <h1>
+                <span className="design_text"> Designe</span> Today
+              </h1>
+            </div>
             <p>
               High level experience in web design and development knowledge,
               producing quality work.
@@ -40,7 +48,7 @@ const Footer = () => {
             <a href="/">Cloud Computing</a>
           </div>
           <div className="resources_links">
-            <h3>Cloud Computing</h3>
+            <h3>Resources</h3>
             <a href="/">Academy</a>
             <a href="/">Blog</a>
             <a href="/">Themes</a>
@@ -61,12 +69,32 @@ const Footer = () => {
           <hr></hr>
         </div>
         <div className="footer_social">
-          <div className="footer_social_linls">
+          <div className="footer_social_links">
             <h3>Follow us</h3>
+            <div className="social_links">
+              <a href="/">
+                <img src={social} alt=""></img>
+              </a>
+              <a href="/">
+                <img src={social1} alt=""></img>
+              </a>
+              <a href="/">
+                <img src={social2} alt=""></img>
+              </a>
+              <a href="/">
+                <img src={social3} alt=""></img>
+              </a>
+              <a href="/">
+                <img src={social4} alt=""></img>
+              </a>
+              <a href="/">
+                <img src={social5} alt=""></img>
+              </a>
+            </div>
           </div>
           <div className="footer_signup_btn">
-            <button>Sign In</button>
-            <button>Contact Us</button>
+            <button className="footer_signup">Sign In</button>
+            <button className="footer_contact">Contact Us</button>
           </div>
         </div>
       </div>
