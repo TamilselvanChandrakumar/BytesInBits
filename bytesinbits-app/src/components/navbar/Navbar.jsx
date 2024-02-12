@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MdDensityMedium } from "react-icons/md";
 import "../navbar/Navbar.css";
 import companylogo from "../../assets/logo/image 1.png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [sideBar, setSideBar] = useState(false);
   const [sticky, setSticky] = useState(false);
@@ -33,10 +34,10 @@ const Navbar = () => {
             <div className={`menu_items ${sideBar === true ? "active" : null}`}>
               <ul>
                 <li>
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="/">Courses</a>
+                  <Link to="/courses">Courses</Link>
                 </li>
                 <li>
                   <a href="/">Placements</a>
