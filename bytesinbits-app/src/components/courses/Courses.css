@@ -114,6 +114,9 @@
 .course_division h3 {
   font-size: 40px;
   font-weight: 700;
+  background: -webkit-linear-gradient(#7728ca, #ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .course_division p {
   font-size: 20px;

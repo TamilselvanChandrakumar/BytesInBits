@@ -1,4 +1,33 @@
 .aboutus_header {
+  position: relative;
+}
+
+.aboutus_header_image img {
   max-width: 100%;
-  background-image: url("/home/minmini/Documents/BytesInBits/bytesinbits-app/src/assets/aboutus/aboutusheader.png");
+  height: auto;
+}
+.aboutus_header_content {
+  padding-top: 2rem;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutus_header_content p {
+  font-size: 52px;
+  font-weight: 700;
+  color: #393939;
+}
+.aboutus_footer_content {
+  position: absolute;
+  bottom: 0%;
+}
+@media (max-width: 600px) {
+  .aboutus_header_content p {
+    font-size: 20px;
+  }
+  .aboutus_header_content {
+    position: static;
+  }
 }

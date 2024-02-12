@@ -12,6 +12,10 @@ const Aboutus = () => {
           <p>Empowering Journeys, Inspiring Connections</p>
           <p>Welcome to Our Narrative of Excellence</p>
         </div>
+        <div className="aboutus_footer_content">
+          {" "}
+          <p>About Business</p>
+        </div>
       </div>
     </>
   );
