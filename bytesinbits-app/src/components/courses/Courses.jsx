@@ -12,6 +12,15 @@ import crm from "../../assets/buildimg/lms.png";
 import buildimg from "../../assets/buildimg/buildproject.png";
 import viewimg from "../../assets/buildimg/viewcourses.png";
 import nextarrow from "../../assets/buildimg/nextarrow.png";
+import courseworld from "../../assets/courses/course_world.png";
+import github from "../../assets/getjobimg/github.png";
+import linkedin from "../../assets/getjobimg/linkedin.png";
+import resume from "../../assets/getjobimg/resume.png";
+import helpapply from "../../assets/getjobimg/helpapply.png";
+import docimg from "../../assets/keyfeatures/docimg.png";
+import lightning from "../../assets/keyfeatures/lightning.png";
+import star from "../../assets/keyfeatures/star.png";
+
 const Courses = () => {
   return (
     <>
@@ -191,7 +200,9 @@ const Courses = () => {
         </div>
         <h5>2</h5>
         <h3>Build</h3>
-        <p>Work on our Real-time Projects , Task Based </p>
+        <p>
+          Work on our Real-time <span>Projects , Task Based</span>{" "}
+        </p>
       </div>
       <div></div>
       <section className="build_contaienr">
@@ -275,10 +286,162 @@ const Courses = () => {
         <h5>3</h5>
         <h3>Get Job</h3>
         <p>
-          Our focus on job-readiness Github Profile, Linkedin Profile, Resume
-          Prep and help Apply{" "}
+          Our focus on job-readiness{" "}
+          <span>
+            {" "}
+            Github Profile, Linkedin Profile, Resume Prep and help Apply
+          </span>{" "}
         </p>
       </div>
+      <section className="getjob_header">
+        <div className="getjob_inner">
+          <div className="getjob_content_container">
+            <div className="getjob_content">
+              <p>
+                <img src={github} alt=""></img>
+              </p>
+              <h3>GitHub Profile</h3>
+              <p>
+                Guidance on creating and maintaining a professional GitHub
+                profile to showcase technical projects and coding prowess.
+              </p>
+            </div>
+            <div className="getjob_content">
+              <p>
+                <img src={linkedin} alt=""></img>
+              </p>
+              <h3>LinkedIn Profile</h3>
+              <p>
+                Assistance in crafting a compelling LinkedIn profile for
+                networking and visibility among recruiters.
+              </p>
+            </div>
+            <div className="getjob_content">
+              <p>
+                <img src={resume} alt=""></img>
+              </p>
+              <h3>Resume Preparation</h3>
+              <p>
+                Expert advice on resume writing to effectively highlight skills,
+                experience, and achievements.
+              </p>
+            </div>
+            <div className="getjob_content">
+              <p>
+                <img src={helpapply} alt=""></img>
+              </p>
+              <h3>Help in Applying</h3>
+              <p>
+                Support in identifying suitable job opportunities and navigating
+                the application process.
+              </p>
+            </div>
+            <div className="course_advisor">
+              <button className="course_advisor_btn">
+                {" "}
+                <img src={viewimg} alt=""></img>Contact Course Advisor
+              </button>
+            </div>
+          </div>
+          <div className="course_getjob_image">
+            <img src={courseworld} alt=""></img>
+          </div>
+        </div>
+      </section>
+      <section className="whyBytes_container">
+        <h2 className="whybytes_text">Why Bytesinbits</h2>
+        <div className="whyBytes_inner">
+          <div className="numbers_container">
+            <div className="numbers_content">
+              <h1>5000+</h1>
+              <p>Learners</p>
+            </div>
+            <div className="numbers_content">
+              <h1>500+</h1>
+              <p>Batches</p>
+            </div>
+            <div className="numbers_content">
+              <h1>14+</h1>
+              <p>Years</p>
+            </div>
+            <div className="numbers_content">
+              <h1>24/7</h1>
+              <p>Support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="keyfeature_text">
+        <h1 style={{ color: "#393939" }}>Key Features</h1>
+      </div>
+      <section className="keyfeature_container">
+        <div className="keyfeature_inner">
+          <div className="keyfeature">
+            <h2>
+              <img src={star} alt=""></img>
+              Real Time Practice Labs
+            </h2>
+            <p>
+              Every Vercel deploy is immutable, and domains act as pointers.
+              Reverting and deploying is an atomic swap operation.
+            </p>
+          </div>
+          <div className="keyfeature">
+            <h2>
+              <img src={docimg} alt=""></img>
+              Physical And Virtual Online Classrooms
+            </h2>
+            <p>
+              Our Edge intelligently preserves multiple concurrent versions of
+              an app, including all their JS, CSS, and other assets, to not
+              interrupt existing traffic as you ship.
+            </p>
+          </div>
+          <div className="keyfeature">
+            <h2>
+              <img src={lightning} alt=""></img>
+              24/7 Support On Slack
+            </h2>
+            <p>
+              Deploying and reverting ensures the successful provisioning and
+              acquisition of resources and metadata, to ensure user traffic
+              never slows down or sees errors.
+            </p>
+          </div>
+          <div className="keyfeature">
+            <h2>
+              <img src={star} alt=""></img>
+              Job & Interview Assistance
+            </h2>
+            <p>
+              Every Vercel deploy is immutable, and domains act as pointers.
+              Reverting and deploying is an atomic swap operation.
+            </p>
+          </div>
+          <div className="keyfeature">
+            <h2>
+              <img src={lightning} alt=""></img>
+              Live Projects With Our Industry Partners
+            </h2>
+            <p>
+              Our Edge intelligently preserves multiple concurrent versions of
+              an app, including all their JS, CSS, and other assets, to not
+              interrupt existing traffic as you ship.
+            </p>
+          </div>
+          <div className="keyfeature">
+            <h2>
+              <img src={docimg} alt=""></img>
+              Internship After Course
+            </h2>
+            <p>
+              Deploying and reverting ensures the successful provisioning and
+              acquisition of resources and metadata, to ensure user traffic
+              never slows down or sees errors.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
