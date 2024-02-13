@@ -18,6 +18,10 @@
   font-size: 52px;
   font-weight: 700;
   color: #393939;
+  text-align: center;
+}
+.aboutus_header_content p span {
+  color: #ffb400;
 }
 .aboutus_footer_content {
   position: absolute;
@@ -30,4 +34,98 @@
   .aboutus_header_content {
     position: static;
   }
+}
+
+/*about us  nav bar  */
+.aboutus_nav_container {
+  margin-top: 30px;
+  padding: 0 5rem 0 5rem;
+}
+.aboutus_nav_inner {
+  background-color: #ffffff;
+  padding: 1rem 1rem;
+  border-radius: 47px;
+  box-shadow: 0 6px 8px 0 #dddddd, 0 8px 20px 0 #dddddd;
+}
+.aboutus_nav_inner ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.aboutus_nav_inner li {
+  list-style-type: none;
+}
+
+.aboutus_nav_inner a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #393939;
+}
+.aboutus_nav_inner a:hover {
+  border-bottom: 3px solid #ffb400;
+}
+@media (max-width: 900px) {
+  .aboutus_nav_container {
+    margin-top: 25px;
+    padding: 0 4rem 0 4rem;
+  }
+  .aboutus_nav_inner {
+    padding: 1.5rem 1.5rem;
+    border-radius: 50px;
+  }
+  .aboutus_nav_inner a {
+    font-size: 22px;
+  }
+  .aboutus_nav_inner ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutus_nav_container {
+    margin-top: 20px;
+    padding: 0 1rem 0 1rem;
+  }
+  .aboutus_nav_inner {
+    padding: 1rem 1rem;
+    border-radius: 30px;
+  }
+  .aboutus_nav_inner a {
+    font-size: 20px;
+  }
+  .aboutus_nav_inner ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media (max-width: 300px) {
+  .aboutus_nav_inner ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* founder */
+.founder_container {
+  border: 1px solid black;
+  margin-top: 50px;
+  padding: 0 4rem 0 4rem;
+}
+.founder_inner {
+  border: 1px solid brown;
+  padding: 2rem;
+}
+.founder_image_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.founder_image_container {
+  align-self: center;
 }
