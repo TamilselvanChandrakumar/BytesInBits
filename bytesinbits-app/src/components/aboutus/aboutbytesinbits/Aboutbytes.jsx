@@ -7,7 +7,9 @@ const Aboutbytes = () => {
   return (
     <div className="aboutbytesinbits_container">
       <div className="aboutbytesinbits_inner">
-        <h1>About Bytes in Bits</h1>
+        <h1>
+          About <span> Bytes </span>in <span>Bits</span>{" "}
+        </h1>
         <p>
           Bytes in Bits Technologies was started by a group of IT professionals
           working in reputed MNCs, who have been experienced in the industry for
@@ -19,7 +21,11 @@ const Aboutbytes = () => {
           favorite institute for advanced embedded systems and full-stack
           development among the students.
         </p>
-        <img src={aboutbytes} alt=""></img>
+        <div className="aboutbytesinbits_image">
+          {" "}
+          <img src={aboutbytes} alt=""></img>
+        </div>
+
         <p>
           It’s our pleasure, Grooming Freshers & finding them in right place. We
           Don’t Hire Trainers as we love teaching & much excited about seeing
@@ -36,7 +42,9 @@ const Aboutbytes = () => {
         </p>
         <div className="aboutbytesinbits_card">
           <div>
-            <h1>Our Mission</h1>
+            <h1>
+              Our <span>Mission</span>{" "}
+            </h1>
             <p>
               To be the leading education institute that is passionate about
               empowering individuals by addressing the gap between industry
@@ -52,7 +60,9 @@ const Aboutbytes = () => {
         <div className="aboutbytesinbits_card">
           <img src={vissionimg}></img>
           <div>
-            <h1>Our Vission</h1>
+            <h1>
+              Our <span>Vission</span>
+            </h1>
             <p>
               Our mission is to provide high-quality education and training that
               enables individuals to acquire the skills and knowledge necessary
