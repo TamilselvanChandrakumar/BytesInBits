@@ -1,3 +1,99 @@
+.admission_container {
+  padding: 0 3rem 0 3rem;
+}
+
+.admission_card {
+  margin-top: 50px;
+  padding: 2rem 1rem 2rem 1rem;
+  box-shadow: 0 6px 10px 0 #dddddd, 0 8px 20px 0 #dddddd;
+}
 .admission_card_inner {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+.admission_card_content {
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.admission_card h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #393939;
+}
+.admission_card h1 span {
+  color: #ff922f;
+}
+.admission_card p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #393939;
+}
+.admission_card_button {
+  display: flex;
+  gap: 2rem;
+}
+.admission_card_button button {
+  width: 250px;
+  height: 52px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #7928ca;
+  border: none;
+  cursor: pointer;
+}
+.card1 h1,
+.card3 h1,
+.card5 h1 {
+  padding-left: 2rem;
+}
+.card2 h1,
+.card4 h1 {
+  text-align: right;
+  padding-right: 2rem;
+}
+@media (max-width: 1250px) {
+  .admission_card_inner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .admission_card_button {
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .admission_card_image img {
+    max-width: 100%;
+  }
+  .admission_card_button {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .admission_container {
+    padding: 0 1rem 0 1rem;
+  }
+  .admission_card_button button {
+    width: 180px;
+    height: 30px;
+    border-radius: 105x;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .admission_card {
+    margin-top: 30px;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+  }
+  .admission_card h1 {
+    text-align: center;
+    padding: 0px;
+  }
 }

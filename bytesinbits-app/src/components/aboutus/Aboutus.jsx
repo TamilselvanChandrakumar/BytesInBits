@@ -35,7 +35,7 @@ const Aboutus = () => {
               <Link to="founder">Founder & Chairman</Link>
             </li>
             <li>
-              <Link>About Bytes in bits</Link>
+              <Link to="aboutbytes">About Bytes in bits</Link>
             </li>
           </ul>
         </nav>

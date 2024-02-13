@@ -7,6 +7,7 @@ import Courses from "./components/courses/Courses";
 import Aboutus from "./components/aboutus/Aboutus";
 import { Founder } from "./components/aboutus/founderpage/Founder";
 import Admission from "./components/aboutus/admission/Admission";
+import Aboutbytes from "./components/aboutus/aboutbytesinbits/Aboutbytes";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="aboutus" element={<Aboutus></Aboutus>}>
           <Route path="admission" element={<Admission></Admission>}></Route>
           <Route path="founder" element={<Founder></Founder>}></Route>
+          <Route path="aboutbytes" element={<Aboutbytes />}></Route>
         </Route>
       </Routes>
       <Footer></Footer>

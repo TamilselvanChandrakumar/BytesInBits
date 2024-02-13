@@ -1,15 +1,23 @@
 import React from "react";
 import "../admission/Admission.css";
+import embedimg from "../../../assets/aboutus/embedded.png";
+import pythonimg from "../../../assets/aboutus/python.png";
+import iotimg from "../../../assets/aboutus/iot.png";
+import matlabimg from "../../../assets/aboutus/matlab.png";
+import aimlimg from "../../../assets/aboutus/ai&ml.png";
+
 const Admission = () => {
   return (
     <>
       <div className="admission_container">
-        <div className="admission_card">
-          <h1>Advanced Embedded System</h1>
+        <div className="admission_card card1">
+          <h1>
+            Advanced <span>Embedded System</span>
+          </h1>
           <div className="admission_card_inner">
             <div className="admission_card_image">
               {" "}
-              <img src=""></img>
+              <img src={embedimg} alt=""></img>
             </div>
             <div className="admission_card_content">
               <p>
@@ -27,8 +35,10 @@ const Admission = () => {
             </div>
           </div>
         </div>
-        <div className="admission_card">
-          <h1>Python Full Stack Web Development</h1>
+        <div className="admission_card card2">
+          <h1>
+            Python Full Stack <span> Web Development</span>
+          </h1>
           <div className="admission_card_inner">
             <div className="admission_card_content">
               <p>
@@ -48,16 +58,18 @@ const Admission = () => {
             </div>
             <div className="admission_card_image">
               {" "}
-              <img src=""></img>
+              <img src={pythonimg} alt=""></img>
             </div>
           </div>
         </div>
-        <div className="admission_card">
-          <h1>Internet of Things (IoT)</h1>
+        <div className="admission_card card3">
+          <h1>
+            Internet of <span>Things</span> (<span>I</span>o<span>T</span>)
+          </h1>
           <div className="admission_card_inner">
             <div className="admission_card_image">
               {" "}
-              <img src=""></img>
+              <img src={iotimg} alt=""></img>
             </div>
             <div className="admission_card_content">
               <p>
@@ -75,8 +87,10 @@ const Admission = () => {
             </div>
           </div>
         </div>
-        <div className="admission_card">
-          <h1>MAT Lab</h1>
+        <div className="admission_card card4">
+          <h1>
+            MAT<span>Lab</span>{" "}
+          </h1>
           <div className="admission_card_inner">
             <div className="admission_card_content">
               <p>
@@ -96,16 +110,19 @@ const Admission = () => {
             </div>
             <div className="admission_card_image">
               {" "}
-              <img src=""></img>
+              <img src={matlabimg} alt=""></img>
             </div>
           </div>
         </div>
-        <div className="admission_card">
-          <h1>Artificial Intelligence (AI) & Machine Learning (ML)</h1>
+        <div className="admission_card card5">
+          <h1>
+            Artificial <span>Intelligence</span> (AI) & Machine
+            <span> Learning </span>(ML)
+          </h1>
           <div className="admission_card_inner">
             <div className="admission_card_image">
               {" "}
-              <img src=""></img>
+              <img src={aimlimg} alt=""></img>
             </div>
             <div className="admission_card_content">
               <p>
