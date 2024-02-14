@@ -286,6 +286,9 @@
     flex-direction: column;
     gap: 1rem;
   }
+  .blog_post_title h2 {
+    font-size: 22px;
+  }
 }
 @media (max-width: 300px) {
   .blog_post_right_1 button {
@@ -298,6 +301,9 @@
     font-size: 25px;
     font-weight: 700;
     color: #393939;
+  }
+  .blog_post_title h2 {
+    font-size: 18px;
   }
 }
 /* article */
