@@ -9,6 +9,7 @@ import { Founder } from "./components/aboutus/founderpage/Founder";
 import Admission from "./components/aboutus/admission/Admission";
 import Aboutbytes from "./components/aboutus/aboutbytesinbits/Aboutbytes";
 import Blog from "./components/blog/Blog";
+import Placements from "./components/placements/Placements";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="courses" element={<Courses></Courses>}></Route>
+        <Route path="placements" element={<Placements></Placements>}></Route>
         <Route path="aboutus" element={<Aboutus></Aboutus>}>
           <Route path="admission" element={<Admission></Admission>}></Route>
           <Route path="founder" element={<Founder></Founder>}></Route>
