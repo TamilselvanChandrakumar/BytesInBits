@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import verticalline from "../../assets/blogimg/verticalline.png";
 import blogpost from "../../assets/blogimg/blogpost.png";
 import blogembedimg from "../../assets/blogimg/blogembedd.png";
+import straightline from "../../assets/blogimg/straightline.png";
 const Blog = () => {
   return (
     <>
@@ -43,32 +44,42 @@ const Blog = () => {
         </nav>
       </section>
       <section className="blog_post_container">
-        <div className="blog_post_left">
-          <div className="blog_post_title">
-            <h2>
-              {" "}
-              <img src={verticalline} alt=""></img>Recent Post :
-            </h2>
-          </div>
-          <div className="blog_post_image">
-            <img src={blogpost} alt=""></img>
-          </div>
+        <div className="blog_post_title">
+          <h2>
+            {" "}
+            <img src={verticalline} alt=""></img>Recent Post :
+          </h2>
         </div>
-        <div className="blog_post_right">
-          <div className="blog_post_right_1">
-            <p>01.Development</p>
-            <h3>Important features to look for in Web Development Features</h3>
-            <button> Read More</button>
-            <hr></hr>
+        <div className="blog_post_inner">
+          <div className="blog_post_left">
+            <div className="blog_post_image">
+              <img src={blogpost} alt=""></img>
+            </div>
           </div>
-          <div className="blog_post_right_2">
-            <p>01.</p>
-            <img src={blogembedimg} alt=""></img>
-            <div>
-              <p>Embedded Systems</p>
-              <h4>
-                Programming embedded systems : active objects in real-time
-              </h4>
+          <div className="blog_post_right">
+            <div className="blog_post_right_1">
+              <p>
+                01.<span>Development</span>
+              </p>
+              <h3>
+                Important features to look for in Web Development Features
+              </h3>
+              <button> Read More</button>
+              <div className="horizontal_line_container">
+                <hr className="horizontal_line"></hr>
+                <img src={straightline} alt=""></img>
+              </div>
+            </div>
+            <div className="blog_post_right_2">
+              <p>01.</p>
+              <img src={blogembedimg} alt=""></img>
+
+              <div>
+                <h5>Embedded Systems</h5>
+                <h4>
+                  Programming embedded systems : active objects in real-time
+                </h4>
+              </div>
             </div>
           </div>
         </div>
