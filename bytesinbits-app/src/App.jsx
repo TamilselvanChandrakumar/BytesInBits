@@ -8,6 +8,7 @@ import Aboutus from "./components/aboutus/Aboutus";
 import { Founder } from "./components/aboutus/founderpage/Founder";
 import Admission from "./components/aboutus/admission/Admission";
 import Aboutbytes from "./components/aboutus/aboutbytesinbits/Aboutbytes";
+import Blog from "./components/blog/Blog";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="founder" element={<Founder></Founder>}></Route>
           <Route path="aboutbytes" element={<Aboutbytes />}></Route>
         </Route>
+        <Route path="blog" element={<Blog></Blog>}></Route>
       </Routes>
       <Footer></Footer>
     </>
