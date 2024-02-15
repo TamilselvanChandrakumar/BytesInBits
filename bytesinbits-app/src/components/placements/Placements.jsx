@@ -3,6 +3,9 @@ import "../../components/placements/Placements.css";
 import placement1 from "../../assets/placements/placement1.png";
 import placement2 from "../../assets/placements/placement2.png";
 import placement3 from "../../assets/placements/placement3.png";
+import celebration1 from "../../assets/placements/celebration1.png";
+import celebration2 from "../../assets/placements/celebration2.png";
+import celebration3 from "../../assets/placements/celebration3.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -102,7 +105,7 @@ const Placements = () => {
           Bytes in Bits<span> Celebrations </span>
         </h1>
       </div>
-      <div>
+      <div className="placement_celebration_content">
         <p>
           Bytes in Bits Institute understands the importance of celebrating
           small occasions and milestones for our happiness. At Bytes in Bits
@@ -112,6 +115,19 @@ const Placements = () => {
           a project, passing an exam or certification, and even something as
           simple as showing up regularly to class.
         </p>
+      </div>
+      <div className="celebration_imgage_container">
+        <div className="celebration_image_inner">
+          <div className="celebration_img">
+            <img src={celebration1} alt=""></img>
+          </div>
+          <div className="celebration_img">
+            <img src={celebration2} alt=""></img>
+          </div>
+          <div className="celebration_img">
+            <img src={celebration3} alt=""></img>
+          </div>
+        </div>
       </div>
     </>
   );
