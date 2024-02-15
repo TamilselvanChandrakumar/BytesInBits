@@ -205,3 +205,120 @@
     max-width: 100%;
   }
 }
+/* testimonial title */
+.testimonial_title {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.testimonial_title h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+.testimonial_title h1 span {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffb400;
+}
+@media (max-width: 900px) {
+  .testimonial_title {
+    padding: 0 2rem 0 2rem;
+  }
+  .testimonial_title h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .testimonial_title h1 span {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .testimonial_title {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  .testimonial_title h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .testimonial_title span {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+/* tetimonai content */
+.testimonial_content {
+  padding: 0 5rem 0 5rem;
+}
+.testimonial_content p {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #393939;
+}
+@media (max-width: 600px) {
+  .testimonial_content {
+    padding: 0 2rem 0 2rem;
+  }
+  .testimonial_content p {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 300px) {
+  .testimonial_content {
+    padding: 0 1rem 0 1rem;
+  }
+  .testimonial_content p {
+    margin-top: 30px;
+    text-align: unset;
+  }
+}
+/* testimonail */
+
+.youtube_container {
+  border: 1px solid black;
+  padding: 0 4rem 0 4rem;
+  margin-top: 50px;
+}
+.youtube_inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.youtube_container a {
+  text-decoration: none;
+}
+.youtube_card {
+  background-color: #25232c;
+  padding: 1rem 0 1rem 1rem;
+  border-radius: 16px;
+}
+.youtube_card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.youtube_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .youtube_inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .youtube_container {
+    padding: 0 1.5rem 0 1.5rem;
+    margin-top: 30px;
+  }
+  .youtube_inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

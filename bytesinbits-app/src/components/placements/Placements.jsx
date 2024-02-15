@@ -6,6 +6,7 @@ import placement3 from "../../assets/placements/placement3.png";
 import celebration1 from "../../assets/placements/celebration1.png";
 import celebration2 from "../../assets/placements/celebration2.png";
 import celebration3 from "../../assets/placements/celebration3.png";
+import youtube from "../../assets/placements/youtube.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -127,6 +128,49 @@ const Placements = () => {
           <div className="celebration_img">
             <img src={celebration3} alt=""></img>
           </div>
+        </div>
+      </div>
+      <div className="testimonial_title">
+        <h1>
+          <span>Testimonials </span>& Mock Interview
+        </h1>
+      </div>
+      <div className="testimonial_content">
+        <p>
+          Bytes in Bits Institute has been helping individuals people to enhance
+          their technical and professional skills for the past two decades.
+          Their dedication to providing high-quality education and practical
+          training has earned them numerous positive testimonials from satisfied
+          students who have successfully landed their dream jobs. Here are some
+          testimonials from happy students as well as Mock Interviews.
+        </p>
+      </div>
+      <div className="youtube_container">
+        <div className="youtube_inner">
+          <a href="">
+            <div className="youtube_card">
+              <h3>Moke Interview by Founder....</h3>
+              <div className="youtube_image">
+                <img src={youtube} alt=""></img>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div className="youtube_card">
+              <h3>Sandheep review about by....</h3>
+              <div className="youtube_image">
+                <img src={youtube} alt=""></img>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div className="youtube_card">
+              <h3>Karthi Review about bytes....</h3>
+              <div className="youtube_image">
+                <img src={youtube} alt=""></img>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </>
