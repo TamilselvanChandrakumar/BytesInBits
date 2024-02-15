@@ -1,26 +1,139 @@
-.placement_card_carousel {
-  position: relative;
-  overflow: hidden;
+/* placement title */
+.placement_title {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.placement_title h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+}
+.placement_title h1 span {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffb400;
+}
+@media (max-width: 900px) {
+  .placement_title {
+    padding: 0 2rem 0 2rem;
+  }
+  .placement_title h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .placement_title {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  .placement_title h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+/* placement carousel */
+.placement_card_container {
   padding: 0 3rem 0 3rem;
+  margin-top: 50px;
+}
+.placement_card {
+  margin-right: 2rem;
+}
+.placement_card img {
+  max-width: 100%;
+}
+.slick-next:before {
+  font-size: 25px;
+}
+.slick-prev:before {
+  font-size: 25px;
+}
+.slick-arrow::before {
+  background-color: black;
+}
+.slick-slide div {
+  margin: 0 1rem;
 }
 
-.placement_card {
-  min-width: 300px;
-  max-width: 300px;
-  height: 400px;
+@media (max-width: 600px) {
+  .placement_card_container {
+    padding: 0 2rem 0 2rem;
+    margin-top: 30px;
+  }
+  .placement_card img {
+    width: 100%;
+  }
+  .slick-slide div {
+    margin: 0;
+  }
 }
-.placement_card_container {
+/* placement content */
+.placement_content {
+  padding: 0 5rem 0 5rem;
+}
+.placement_content p {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #393939;
+}
+@media (max-width: 600px) {
+  .placement_content {
+    padding: 0 2rem 0 2rem;
+  }
+  .placement_content p {
+    margin-top: 35px;
+    text-align: justify;
+  }
+}
+@media (max-width: 300px) {
+  .placement_content {
+    padding: 0 1rem 0 1rem;
+  }
+  .placement_content p {
+    margin-top: 30px;
+  }
+}
+/* placement celebaration title */
+.placement_celebration_title {
+  margin-top: 30px;
   display: flex;
-  gap: 2rem;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
+  justify-content: center;
 }
-.pre_btn,
-.next-btn {
-  position: absolute;
-  top: 50%;
+.placement_celebration_title h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000000;
 }
-.next-btn {
-  right: 0;
+.placement_celebration_title h1 span {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffb400;
+}
+@media (max-width: 900px) {
+  .placement_celebration_title {
+    padding: 0 2rem 0 2rem;
+  }
+  .placement_celebration_title h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .placement_celebration_title h1 span {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .placement_celebration_title {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  .placement_celebration_title h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .placement_celebration_title span {
+    font-size: 25px;
+    text-align: center;
+  }
 }
