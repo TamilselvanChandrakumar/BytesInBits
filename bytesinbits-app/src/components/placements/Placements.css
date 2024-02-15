@@ -1,12 +1,26 @@
-.placement_card_container {
+.placement_card_carousel {
+  position: relative;
+  overflow: hidden;
   padding: 0 3rem 0 3rem;
 }
 
-@media (max-width: 600px) {
-  .placement_card_container {
-    padding: 0 1rem 0 1rem;
-  }
-  .placement_card img {
-    max-width: 100%;
-  }
+.placement_card {
+  min-width: 300px;
+  max-width: 300px;
+  height: 400px;
+}
+.placement_card_container {
+  display: flex;
+  gap: 2rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+.pre_btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+}
+.next-btn {
+  right: 0;
 }
