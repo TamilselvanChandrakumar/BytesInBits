@@ -8,18 +8,12 @@ const Aboutus = () => {
     <>
       <div className="aboutus_header">
         <div className="aboutus_header_image">
-          <img src={aboutusheader} alt=""></img>
-        </div>
-        <div className="aboutus_header_content">
           <p>
             Empowering Journeys,<span>Inspiring Connections</span>{" "}
           </p>
           <p>
             Welcome to Our <span> Narrative of Excellence.</span>
-          </p>
-        </div>
-        <div className="aboutus_footer_content">
-          {" "}
+          </p>{" "}
           <p>About Business</p>
         </div>
       </div>
