@@ -48,6 +48,16 @@ const Placements = () => {
   };
   return (
     <>
+      <header className="placement_header">
+        <div className="placement_header_background">
+          <h1>Placement Training</h1>
+          <h3>Your human talent is your most important talent.</h3>
+          <div>
+            <p>“Doing the best at this moment puts you in the best place</p>
+            <p>for the next moment.”</p>
+          </div>
+        </div>
+      </header>
       <div className="placement_title">
         <h1>
           Best Job <span>Placement Training</span> In Bytes in Bits

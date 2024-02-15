@@ -1,3 +1,87 @@
+/* placement header */
+.placement_header_background {
+  background-image: url("/home/minmini/Documents/BytesInBits/bytesinbits-app/src/assets/placements/placementbackground.png");
+  background-size: cover;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 10rem;
+}
+.placement_header_background h1 {
+  font-size: 80px;
+  font-weight: 700;
+  color: #ffb400;
+}
+.placement_header_background h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #393939;
+}
+.placement_header_background p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #393939;
+}
+@media (max-width: 1500px) {
+  .placement_header_background {
+    padding-left: 5rem;
+  }
+}
+@media (max-width: 900px) {
+  .placement_header_background {
+    padding: 0 1rem 0 4rem;
+    background-size: contain;
+    height: 450px;
+  }
+  .placement_header_background h1 {
+    font-size: 65px;
+  }
+  .placement_header_background h3 {
+    font-size: 26px;
+  }
+  .placement_header_background p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .placement_header_background {
+    padding: 0 1rem 0 2rem;
+    background-size: contain;
+    height: 400px;
+    gap: 1rem;
+  }
+  .placement_header_background h1 {
+    font-size: 50px;
+  }
+  .placement_header_background h3 {
+    font-size: 22px;
+  }
+  .placement_header_background p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+@media (max-width: 300px) {
+  .placement_header_background {
+    padding: 0 1rem 0 1rem;
+    background-size: contain;
+    height: 300px;
+    gap: 1rem;
+  }
+  .placement_header_background h1 {
+    font-size: 30px;
+  }
+  .placement_header_background h3 {
+    font-size: 18px;
+  }
+  .placement_header_background p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
 /* placement title */
 .placement_title {
   margin-top: 30px;
@@ -277,7 +361,6 @@
 /* testimonail */
 
 .youtube_container {
-  border: 1px solid black;
   padding: 0 4rem 0 4rem;
   margin-top: 50px;
 }
@@ -293,17 +376,18 @@
   background-color: #25232c;
   padding: 1rem 0 1rem 1rem;
   border-radius: 16px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .youtube_card h3 {
   font-size: 22px;
   font-weight: 600;
   color: #ffffff;
 }
-.youtube_image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 @media (max-width: 900px) {
   .youtube_inner {
     display: grid;

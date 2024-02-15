@@ -20,6 +20,7 @@ function App() {
         <Route path="courses" element={<Courses></Courses>}></Route>
         <Route path="placements" element={<Placements></Placements>}></Route>
         <Route path="aboutus" element={<Aboutus></Aboutus>}>
+          <Route index element={<Founder></Founder>}></Route>
           <Route path="admission" element={<Admission></Admission>}></Route>
           <Route path="founder" element={<Founder></Founder>}></Route>
           <Route path="aboutbytes" element={<Aboutbytes />}></Route>
