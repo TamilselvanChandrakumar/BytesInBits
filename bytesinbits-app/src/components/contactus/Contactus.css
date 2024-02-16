@@ -1,0 +1,93 @@
+/* conact us header */
+.contact_header_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contact_header_leftside {
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.contact_header_leftside h1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: #ffb400;
+}
+.contact_header_leftside h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #766d6d;
+}
+.contact_header_leftside p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #766d6d;
+}
+.contact_header_rightside img {
+  max-width: 100%;
+}
+@media (max-width: 1250px) {
+  .contact_header_leftside h1 {
+    font-size: 80px;
+  }
+  .contact_header_leftside h3 {
+    font-size: 30px;
+  }
+  .contact_header_leftside p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .contact_header_container {
+    background-image: url("/home/minmini/Documents/BytesInBits/bytesinbits-app/src/assets/contactus/contactworld.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    justify-items: flex-start;
+  }
+
+  .contact_header_rightside {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .contact_header_leftside {
+    padding-left: 1rem;
+  }
+  .contact_header_container {
+    background-image: url("/home/minmini/Documents/BytesInBits/bytesinbits-app/src/assets/contactus/contactworld.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .contact_header_leftside h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .contact_header_leftside h3 {
+    font-size: 20px;
+  }
+  .contact_header_leftside p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contact_header_leftside {
+    padding: 1rem 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+@media (max-width: 330px) {
+  .contact_header_leftside h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+}

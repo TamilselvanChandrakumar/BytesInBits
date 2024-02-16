@@ -10,6 +10,7 @@ import Admission from "./components/aboutus/admission/Admission";
 import Aboutbytes from "./components/aboutus/aboutbytesinbits/Aboutbytes";
 import Blog from "./components/blog/Blog";
 import Placements from "./components/placements/Placements";
+import Contactus from "./components/contactus/Contactus";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="aboutbytes" element={<Aboutbytes />}></Route>
         </Route>
         <Route path="blog" element={<Blog></Blog>}></Route>
+        <Route path="contactus" element={<Contactus />}></Route>
       </Routes>
       <Footer></Footer>
     </>
