@@ -26,74 +26,88 @@ const Contactus = () => {
         </div>
       </section>
       <div className="getin_touch_title">
-        <h1>Get In Touch</h1>
-        <p>
-          Feel free to contact us any time. We will get back to you as soon as
-          we can!
+        <h1>
+          Get In<span> Touch</span>
+        </h1>
+        <p className="contact_header_title_1">
+          Feel free to contact us any time.
+        </p>
+        <p className="contact_header_title_2">
+          We will get back to you as soon as we can!
         </p>
       </div>
       <section className="getin_touch_container">
         <div className="getin_touch_inner">
           <div className="getin_touch_leftside">
-            <div>
+            <div className="getin_touch_leftside_inner">
               <div>
-                <img src={phone1} alt=""></img>
-                <h3>Phone Number</h3>
+                <div className="getin_image">
+                  <img src={phone1} alt=""></img>
+                  <h3>Phone Number</h3>
+                </div>
+                <p>91 9698567823</p>
               </div>
-              <p>91 9698567823</p>
-            </div>
-            <div>
               <div>
-                <img src={email1} alt=""></img>
-                <h3>Email Address</h3>
+                <div className="getin_image">
+                  <img src={email1} alt=""></img>
+                  <h3>Email Address</h3>
+                </div>
+                <p>bytesandbites@gmail.com</p>
               </div>
-              <p>bytesandbites@gmail.com</p>
-            </div>
-            <div>
               <div>
-                <img src={address} alt=""></img>
-                <h3>Address</h3>
+                <div className="getin_image">
+                  <img src={address} alt=""></img>
+                  <h3>Address</h3>
+                </div>
+                <p>99, Roving St. Big City ,P&A</p>
+                <p> Pincode: 43256</p>
               </div>
-              <p>99, Roving St. Big City ,P&A Pincode: 43256</p>
-            </div>
-            <div>
               <div>
-                <img src={website} alt=""></img>
-                <h3>Websites</h3>
+                <div className="getin_image">
+                  <img src={website} alt=""></img>
+                  <h3>Websites</h3>
+                </div>
+                <p>WWW.bytesandbites.com</p>
               </div>
-              <p>WWW.bytesandbites.com</p>
             </div>
           </div>
           <div className="getin_touch_rightside">
-            <form>
+            <form className="getin_touch_rightside_inner">
               <div>
                 {" "}
                 <label>Full Name</label>
-                <div>
+                <div className="fullname_input">
                   <img src={account} alt=""></img>
-                  <input type="text"></input>
-                  <input type="text"></input>
+                  <div className="fullname_inner">
+                    <input placeholder="First Name" type="text"></input>
+                    <input placeholder="Last Name" type="text"></input>
+                  </div>
                 </div>
               </div>
               <div>
                 <label>Email Address</label>
-                <div>
-                  <img src={email2} alt=""></img> <input type="email"></input>
+                <div className="input_image">
+                  <img src={email2} alt=""></img>{" "}
+                  <input type="email" placeholder="Email Address"></input>
                 </div>
               </div>
               <div>
                 <label>Mobile Number</label>
 
-                <div>
-                  <img src={phone2} alt=""></img> <input type="phone"></input>
+                <div className="input_image">
+                  <img src={phone2} alt=""></img>{" "}
+                  <input type="phone" placeholder="Mobile Number"></input>
                 </div>
               </div>
               <div>
                 <label>Your Message</label>
 
-                <div>
+                <div className="input_textarea">
                   <img src={message} alt=""></img>{" "}
-                  <input type="text-area"></input>
+                  <textarea
+                    type="text-area"
+                    placeholder="Your Message"
+                  ></textarea>
                 </div>
               </div>
               <div>
