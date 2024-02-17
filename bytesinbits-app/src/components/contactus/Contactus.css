@@ -212,6 +212,9 @@
   background-color: #f2f6ff;
   box-shadow: 0 6px 8px 0 #00000040, 0 8px 20px 0 #00000040;
   border: none;
+  font-size: 16px;
+  padding: 1rem;
+  color: #393939;
 }
 .getin_touch_rightside input::placeholder {
   font-size: 14px;
@@ -380,12 +383,110 @@
 }
 /* contact us footer content */
 .footer_contactus_container {
-  border: 1px solid #000000;
-  padding: 5rem 3rem 0 5rem;
+  padding: 5rem 3rem 5rem 3rem;
   background-color: #ededed;
   position: relative;
   bottom: 70px;
   z-index: -1;
 }
-.footer_content_inner {
+.footer_contactus_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer_contactus_inner h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #393939;
+  text-align: center;
+}
+.footer_contactus_inner h1 span {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffb400;
+}
+.footer_contactus_inner h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #393939;
+  text-align: center;
+}
+.footer_contactus_inner h2 span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffb400;
+}
+@media (max-width: 900px) {
+  .footer_contactus_container {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+  .footer_contactus_inner h1 {
+    font-size: 22px;
+  }
+  .footer_contactus_inner h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .footer_contactus_container {
+    padding: 3rem 1rem 3rem 1rem;
+  }
+  .footer_contactus_inner {
+    gap: 1.5rem;
+  }
+  .footer_contactus_inner h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .footer_contactus_inner h1 span {
+    font-size: 20px;
+  }
+  .footer_contactus_inner h2 {
+    font-size: 20px;
+  }
+  .footer_contactus_inner h2 span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .footer_contactus_container {
+    padding: 3rem 1rem 3rem 1rem;
+  }
+  .footer_contactus_inner {
+    gap: 1rem;
+  }
+  .footer_contactus_inner h1 {
+    font-size: 18px;
+    text-align: left;
+  }
+  .footer_contactus_inner h1 span {
+    font-size: 18px;
+  }
+  .footer_contactus_inner h2 {
+    font-size: 18px;
+    text-align: left;
+  }
+  .footer_contactus_inner h2 span {
+    font-size: 18px;
+  }
+}
+/* footer img */
+.footer_location_container {
+  margin-bottom: 0;
+  max-width: 100%;
+  height: 500px;
+  background-image: url("/home/minmini/Documents/BytesInBits/bytesinbits-app/src/assets/contactus/footerbackground.png");
+}
+.footer_location {
+  display: inline-block;
+  margin: 2rem;
+  /* padding: 1rem 5rem 2rem 1rem; */
+  background-color: #f2f6ff;
+}
+@media (max-width: 600px) {
+  .footer_location_container {
+    background-size: cover;
+    max-width: 100%;
+    height: 300px;
+  }
 }

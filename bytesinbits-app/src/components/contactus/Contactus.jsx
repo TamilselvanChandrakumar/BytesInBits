@@ -134,17 +134,34 @@ const Contactus = () => {
       <div className="footer_relative"></div>
       <section className="footer_contactus_container">
         <div className="footer_contactus_inner">
-          <h1>
-            Are you interested in taking your
-            <span> embedded systems skill</span>s to the next level? Look no
-          </h1>
-          <h1>further than our advanced embedded course training institute!</h1>
+          <div>
+            <h1>
+              Are you interested in taking your
+              <span> embedded systems skill</span>s to the next level? Look no
+            </h1>
+            <h1>
+              further than our advanced embedded course training institute!
+            </h1>
+          </div>
           <div>
             <h2>
                Our advanced embedded <span>course training institute</span>{" "}
               today and take your skills to the next level!  
             </h2>
           </div>
+        </div>
+      </section>
+      <section className="footer_location_container">
+        <div className="footer_location">
+          <a href="">
+            <div>
+              {" "}
+              <img></img>
+              <h3>Address</h3>
+            </div>
+            <h3>99, Roving St. Big City ,P&A</h3>
+            <h3>Pincode: 43256</h3>.
+          </a>
         </div>
       </section>
     </>

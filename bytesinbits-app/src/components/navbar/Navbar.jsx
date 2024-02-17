@@ -20,6 +20,10 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScrollbar);
     };
   });
+  const moveToTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
   return (
     <>
       <div className={`navbar_container ${sticky ? "sticky" : null}`}>
@@ -34,22 +38,34 @@ const Navbar = () => {
             <div className={`menu_items ${sideBar === true ? "active" : null}`}>
               <ul>
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/" onClick={moveToTop}>
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/courses">Courses</Link>
+                  <Link to="/courses" onClick={moveToTop}>
+                    Courses
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/placements">Placements</Link>
+                  <Link to="/placements" onClick={moveToTop}>
+                    Placements
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/aboutus">About Us</Link>
+                  <Link to="/aboutus" onClick={moveToTop}>
+                    About Us
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/blog">Blog</Link>
+                  <Link to="/blog" onClick={moveToTop}>
+                    Blog
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/contactus">Contact Us</Link>
+                  <Link to="/contactus" onClick={moveToTop}>
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>
