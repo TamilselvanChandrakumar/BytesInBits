@@ -154,9 +154,9 @@ const Contactus = () => {
       <section className="footer_location_container">
         <div className="footer_location">
           <a href="">
-            <div>
+            <div className="footer_location_address">
               {" "}
-              <img></img>
+              <img src={address} alt=""></img>
               <h3>Address</h3>
             </div>
             <h3>99, Roving St. Big City ,P&A</h3>

@@ -7,15 +7,17 @@ const Aboutus = () => {
   return (
     <>
       <div className="aboutus_header">
-        <div className="aboutus_header_image">
+        <div className="aboutus_header_content1">
           <p>
             Empowering Journeys,<span>Inspiring Connections</span>{" "}
           </p>
           <p>
             Welcome to Our <span> Narrative of Excellence.</span>
           </p>{" "}
-          <p>About Business</p>
         </div>
+        <p className="about_business_text">
+          About <span>Business</span>
+        </p>
       </div>
       <section className="aboutus_nav_container">
         <nav className="aboutus_nav_inner">
