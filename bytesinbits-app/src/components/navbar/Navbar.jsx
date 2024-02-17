@@ -21,6 +21,7 @@ const Navbar = () => {
     };
   });
   const moveToTop = () => {
+    setSideBar(!sideBar);
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   };
