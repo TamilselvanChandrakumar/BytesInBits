@@ -9,6 +9,7 @@ import account from "../../assets/contactus/account_circle.png";
 import email2 from "../../assets/contactus/mail.png";
 import phone2 from "../../assets/contactus/call.png";
 import message from "../../assets/contactus/forum.png";
+import contactusimg from "../../assets/contactus/contactusimg.png";
 const Contactus = () => {
   return (
     <>
@@ -114,6 +115,35 @@ const Contactus = () => {
                 <button>Send Message</button>
               </div>
             </form>
+          </div>
+        </div>
+      </section>
+      <section className="contactus_image_container">
+        <div className="contactus_image_inner">
+          <div className="contactus_image">
+            <img src={contactusimg} alt=""></img>
+          </div>
+          <div className="contactus_image_content">
+            <h1>
+              BEST <span>SOFTWARE </span>TRAINING <span>INSTITUTE </span>IN
+              BANGALORE
+            </h1>
+          </div>
+        </div>
+      </section>
+      <div className="footer_relative"></div>
+      <section className="footer_contactus_container">
+        <div className="footer_contactus_inner">
+          <h1>
+            Are you interested in taking your
+            <span> embedded systems skill</span>s to the next level? Look no
+          </h1>
+          <h1>further than our advanced embedded course training institute!</h1>
+          <div>
+            <h2>
+               Our advanced embedded <span>course training institute</span>{" "}
+              today and take your skills to the next level!  
+            </h2>
           </div>
         </div>
       </section>
