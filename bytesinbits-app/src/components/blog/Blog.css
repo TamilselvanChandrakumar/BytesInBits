@@ -309,6 +309,7 @@
 /* article */
 .blog_artical_container {
   margin-top: 50px;
+  margin-bottom: 70px;
   padding: 0 3rem 0 3rem;
 }
 .blog_articl_card_container {
@@ -355,6 +356,7 @@
 @media (max-width: 600px) {
   .blog_artical_container {
     margin-top: 30px;
+    margin-bottom: 30px;
     padding: 0 1rem 0 1rem;
   }
   .blog_articl_card_container {

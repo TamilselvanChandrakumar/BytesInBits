@@ -363,6 +363,7 @@
 .youtube_container {
   padding: 0 4rem 0 4rem;
   margin-top: 50px;
+  margin-bottom: 70px;
 }
 .youtube_inner {
   display: grid;
@@ -399,6 +400,7 @@
   .youtube_container {
     padding: 0 1.5rem 0 1.5rem;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
   .youtube_inner {
     display: grid;

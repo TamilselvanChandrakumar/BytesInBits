@@ -1,6 +1,7 @@
 /* founder */
 .founder_container {
   margin-top: 50px;
+  margin-bottom: 70px;
   padding: 0 4rem 0 4rem;
 }
 .founder_inner {
@@ -53,6 +54,7 @@
   }
   .founder_container {
     padding: 0 1rem 0 1rem;
+    margin-bottom: 30px;
   }
   .founder_inner {
     padding: 1.5rem;

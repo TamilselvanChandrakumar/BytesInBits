@@ -1,6 +1,7 @@
 .aboutbytesinbits_container {
   padding: 0 3rem 0 3rem;
   margin-top: 50px;
+  margin-bottom: 70px;
 }
 .aboutbytesinbits_inner {
   padding: 2rem 1.5rem 1.5rem 1.5rem;
@@ -56,6 +57,7 @@
   .aboutbytesinbits_container {
     padding: 0 1rem 0 1rem;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
   .aboutbytesinbits_card {
     margin-top: 20px;
