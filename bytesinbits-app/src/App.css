@@ -15,6 +15,9 @@ html,
 body {
   font-family: "poppins", sans-serif;
 }
+button {
+  cursor: pointer;
+}
 /* top to scroll button */
 .removetopscroll {
   display: none;
