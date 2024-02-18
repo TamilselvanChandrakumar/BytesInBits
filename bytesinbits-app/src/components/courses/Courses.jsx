@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "../courses/Courses.css";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 import line from "../../assets/courses/line.png";
 import duration from "../../assets/allcoursesimg/duration.png";
 import enroll from "../../assets/allcoursesimg/enroll.png";
@@ -22,6 +24,7 @@ import lightning from "../../assets/keyfeatures/lightning.png";
 import star from "../../assets/keyfeatures/star.png";
 
 const Courses = () => {
+  const [counterOn, seCountertOn] = useState(false);
   return (
     <>
       <div className="course_header_container">
@@ -349,32 +352,43 @@ const Courses = () => {
         </div>
       </section>
       <section className="whyBytes_container">
-        <h2 className="whybytes_text">Why Bytesinbits</h2>
-        <div className="whyBytes_inner">
-          <div className="numbers_container">
-            <div className="numbers_content">
-              <h1>5000+</h1>
-              <p>Learners</p>
-            </div>
-            <div className="numbers_content">
-              <h1>500+</h1>
-              <p>Batches</p>
-            </div>
-            <div className="numbers_content">
-              <h1>14+</h1>
-              <p>Years</p>
-            </div>
-            <div className="numbers_content">
-              <h1>24/7</h1>
-              <p>Support</p>
+        <ScrollTrigger
+          onEnter={() => seCountertOn(true)}
+          onExit={() => seCountertOn(false)}
+        >
+          <h2 className="whybytes_text">Why Bytesinbits</h2>
+          <div className="whyBytes_inner">
+            <div className="numbers_container">
+              <div className="numbers_content">
+                <h1>
+                  {" "}
+                  {counterOn && <CountUp end={5000} suffix="+"></CountUp>}
+                </h1>
+                <p>Learners</p>
+              </div>
+              <div className="numbers_content">
+                <h1>{counterOn && <CountUp end={500} suffix="+"></CountUp>}</h1>
+                <p>Batches</p>
+              </div>
+              <div className="numbers_content">
+                <h1> {counterOn && <CountUp end={14} suffix="+"></CountUp>}</h1>
+                <p>Years</p>
+              </div>
+              <div className="numbers_content">
+                <h1>24/7</h1>
+                <p>Support</p>
+              </div>
             </div>
           </div>
-        </div>
+        </ScrollTrigger>
       </section>
       <div className="keyfeature_text">
         <h1 style={{ color: "#393939" }}>Key Features</h1>
       </div>
-      <section className="keyfeature_container">
+      <section
+        className="keyfeature_container"
+        style={{ marginBottom: "30px" }}
+      >
         <div className="keyfeature_inner">
           <div className="keyfeature">
             <h2>
