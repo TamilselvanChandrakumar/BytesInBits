@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../components/blog/Blog.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import verticalline from "../../assets/blogimg/verticalline.png";
 import blogpost from "../../assets/blogimg/blogpost.png";
@@ -12,6 +14,9 @@ import articlepython from "../../assets/blogimg/articlepython.png";
 import articledev from "../../assets/blogimg/articledevelopment.png";
 import articlecloud from "../../assets/blogimg/articlecloud.png";
 const Blog = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <>
       <div className="blog_header">
@@ -58,12 +63,12 @@ const Blog = () => {
         </div>
         <div className="blog_post_inner">
           <div className="blog_post_left">
-            <div className="blog_post_image">
+            <div className="blog_post_image" data-aos="fade-up">
               <img src={blogpost} alt=""></img>
             </div>
           </div>
           <div className="blog_post_right">
-            <div className="blog_post_right_1">
+            <div className="blog_post_right_1" data-aos="fade-up">
               <p>
                 01.<span>Development</span>
               </p>
@@ -76,7 +81,7 @@ const Blog = () => {
                 <img src={straightline} alt=""></img>
               </div>
             </div>
-            <div className="blog_post_right_2">
+            <div className="blog_post_right_2" data-aos="fade-up">
               <p>01.</p>
               <img src={blogembedimg} alt=""></img>
 
@@ -98,7 +103,7 @@ const Blog = () => {
           </h2>
         </div>
         <div className="blog_articl_card_container">
-          <div className="blog_artical_card">
+          <div className="blog_artical_card" data-aos="fade-up">
             <img src={articleembed} alt=""></img>
             <h4>Embedded Systems</h4>
             <h1>Best Embedded Systems Strategies You should be Using</h1>
@@ -107,7 +112,7 @@ const Blog = () => {
               overall code management. Implement. . .<a href="/">Read More </a>
             </p>
           </div>
-          <div className="blog_artical_card">
+          <div className="blog_artical_card" data-aos="fade-up">
             <img src={articleiot} alt=""></img>
             <h4>IoT</h4>
             <h1>Guarding the IoT Gates to the Connected world</h1>
@@ -117,7 +122,7 @@ const Blog = () => {
               about . . .<a href="/">Read More </a>
             </p>
           </div>
-          <div className="blog_artical_card">
+          <div className="blog_artical_card" data-aos="fade-up">
             <img src={articlematlab} alt=""></img>
             <h4>MatLAb</h4>
             <h1>
@@ -133,7 +138,7 @@ const Blog = () => {
       </section>
       <section className="blog_artical_container">
         <div className="blog_articl_card_container">
-          <div className="blog_artical_card">
+          <div className="blog_artical_card" data-aos="fade-up">
             <img src={articlepython} alt=""></img>
             <h4>Python Full Stack Web Development</h4>
             <h1>How to Transcribe Speech Recordings into Text with Python</h1>
@@ -142,7 +147,7 @@ const Blog = () => {
               it's useful to have a highly. . .<a href="/">Read More </a>
             </p>
           </div>
-          <div className="blog_artical_card">
+          <div className="blog_artical_card" data-aos="fade-up">
             <img src={articledev} alt=""></img>
             <h4>Development</h4>
             <h1>Comparisons of the Best Web Development Frameworks</h1>
@@ -151,7 +156,7 @@ const Blog = () => {
               overall code management. Implement. . .<a href="/">Read More </a>
             </p>
           </div>
-          <div className="blog_artical_card">
+          <div className="blog_artical_card" data-aos="fade-up">
             <img src={articlecloud} alt=""></img>
             <h4>Cloud and Deveops</h4>
             <h1>Cloud Outsourcing a Better Choice for Startups?</h1>

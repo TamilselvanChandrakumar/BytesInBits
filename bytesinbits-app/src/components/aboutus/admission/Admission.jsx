@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../admission/Admission.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import embedimg from "../../../assets/aboutus/embedded.png";
 import pythonimg from "../../../assets/aboutus/python.png";
 import iotimg from "../../../assets/aboutus/iot.png";
@@ -7,6 +9,9 @@ import matlabimg from "../../../assets/aboutus/matlab.png";
 import aimlimg from "../../../assets/aboutus/ai&ml.png";
 
 const Admission = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <>
       <div className="admission_container">
@@ -15,11 +20,11 @@ const Admission = () => {
             Advanced <span>Embedded System</span>
           </h1>
           <div className="admission_card_inner">
-            <div className="admission_card_image">
+            <div className="admission_card_image" data-aos="fade-up">
               {" "}
               <img src={embedimg} alt=""></img>
             </div>
-            <div className="admission_card_content">
+            <div className="admission_card_content" data-aos="fade-up">
               <p>
                 {" "}
                 “Advanced Embedded Systems” is designed to provide in-depth
@@ -40,7 +45,7 @@ const Admission = () => {
             Python Full Stack <span> Web Development</span>
           </h1>
           <div className="admission_card_inner">
-            <div className="admission_card_content">
+            <div className="admission_card_content" data-aos="fade-up">
               <p>
                 Embark on a transformative journey in Python Full Stack Web
                 Development. Our comprehensive course covers front-end and
@@ -56,7 +61,7 @@ const Admission = () => {
                 <button>Register Now</button>
               </div>
             </div>
-            <div className="admission_card_image">
+            <div className="admission_card_image" data-aos="fade-up">
               {" "}
               <img src={pythonimg} alt=""></img>
             </div>
@@ -67,11 +72,11 @@ const Admission = () => {
             Internet of <span>Things</span> (<span>I</span>o<span>T</span>)
           </h1>
           <div className="admission_card_inner">
-            <div className="admission_card_image">
+            <div className="admission_card_image" data-aos="fade-up">
               {" "}
               <img src={iotimg} alt=""></img>
             </div>
-            <div className="admission_card_content">
+            <div className="admission_card_content" data-aos="fade-up">
               <p>
                 Explore the vast possibilities of the Internet of Things (IoT)
                 with our dynamic course. Dive into the world of connected
@@ -92,7 +97,7 @@ const Admission = () => {
             MAT<span>Lab</span>{" "}
           </h1>
           <div className="admission_card_inner">
-            <div className="admission_card_content">
+            <div className="admission_card_content" data-aos="fade-up">
               <p>
                 Immerse yourself in the world of MATLAB with our comprehensive
                 course. Learn the fundamentals of scientific computing, data
@@ -108,7 +113,7 @@ const Admission = () => {
                 <button>Register Now</button>
               </div>
             </div>
-            <div className="admission_card_image">
+            <div className="admission_card_image" data-aos="fade-up">
               {" "}
               <img src={matlabimg} alt=""></img>
             </div>
@@ -120,11 +125,11 @@ const Admission = () => {
             <span> Learning </span>(ML)
           </h1>
           <div className="admission_card_inner">
-            <div className="admission_card_image">
+            <div className="admission_card_image" data-aos="fade-up">
               {" "}
               <img src={aimlimg} alt=""></img>
             </div>
-            <div className="admission_card_content">
+            <div className="admission_card_content" data-aos="fade-up">
               <p>
                 Dive into the realms of Artificial Intelligence (AI) and Machine
                 Learning (ML) with our dynamic course. Explore cutting-edge

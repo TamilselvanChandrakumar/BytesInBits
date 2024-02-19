@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../components/placements/Placements.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import placement1 from "../../assets/placements/placement1.png";
 import placement2 from "../../assets/placements/placement2.png";
 import placement3 from "../../assets/placements/placement3.png";
@@ -46,6 +48,9 @@ const Placements = () => {
       },
     ],
   };
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <>
       <header className="placement_header">
@@ -64,7 +69,10 @@ const Placements = () => {
         </h1>
       </div>
       <div className="placement_card_container ">
-        <div className="placement_card_inner slider-container">
+        <div
+          className="placement_card_inner slider-container"
+          data-aos="fade-up"
+        >
           <Slider {...settings}>
             <div className="placement_card ">
               <img src={placement1} alt=""></img>
@@ -90,7 +98,7 @@ const Placements = () => {
           </Slider>
         </div>
       </div>
-      <div className="placement_content">
+      <div className="placement_content" data-aos="fade-up">
         <p>
           We are thrilled to announce that our students have been successfully
           placed at some of the top-level companies. Their expertise and skills
@@ -102,7 +110,7 @@ const Placements = () => {
           learning and hands-on experience has helped our students excel in the
           industry, resulting in their success. 
         </p>
-        <p>
+        <p data-aos="fade-up">
           We are confident that our upcoming batches of students will also have
           similar success stories to share, and we look forward to continuing
           our efforts in providing the best learning and placement opportunities
@@ -117,7 +125,7 @@ const Placements = () => {
         </h1>
       </div>
       <div className="placement_celebration_content">
-        <p>
+        <p data-aos="fade-up">
           Bytes in Bits Institute understands the importance of celebrating
           small occasions and milestones for our happiness. At Bytes in Bits
           Institute,we believe that even small achievements and milestones are
@@ -129,13 +137,13 @@ const Placements = () => {
       </div>
       <div className="celebration_imgage_container">
         <div className="celebration_image_inner">
-          <div className="celebration_img">
+          <div className="celebration_img" data-aos="fade-up">
             <img src={celebration1} alt=""></img>
           </div>
-          <div className="celebration_img">
+          <div className="celebration_img" data-aos="fade-up">
             <img src={celebration2} alt=""></img>
           </div>
-          <div className="celebration_img">
+          <div className="celebration_img" data-aos="fade-up">
             <img src={celebration3} alt=""></img>
           </div>
         </div>
@@ -146,7 +154,7 @@ const Placements = () => {
         </h1>
       </div>
       <div className="testimonial_content">
-        <p>
+        <p data-aos="fade-up">
           Bytes in Bits Institute has been helping individuals people to enhance
           their technical and professional skills for the past two decades.
           Their dedication to providing high-quality education and practical
@@ -158,7 +166,7 @@ const Placements = () => {
       <div className="youtube_container">
         <div className="youtube_inner">
           <a href="">
-            <div className="youtube_card">
+            <div className="youtube_card" data-aos="fade-up">
               <h3>Moke Interview by Founder....</h3>
               <div className="youtube_image">
                 <img src={youtube} alt=""></img>
@@ -166,7 +174,7 @@ const Placements = () => {
             </div>
           </a>
           <a href="">
-            <div className="youtube_card">
+            <div className="youtube_card" data-aos="fade-up">
               <h3>Sandheep review about by....</h3>
               <div className="youtube_image">
                 <img src={youtube} alt=""></img>
@@ -174,7 +182,7 @@ const Placements = () => {
             </div>
           </a>
           <a href="">
-            <div className="youtube_card">
+            <div className="youtube_card" data-aos="fade-up">
               <h3>Karthi Review about bytes....</h3>
               <div className="youtube_image">
                 <img src={youtube} alt=""></img>

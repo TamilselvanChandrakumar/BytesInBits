@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../components/contactus/Contactus.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import contactworld from "../../assets/contactus/contactworld.png";
 import phone1 from "../../assets/contactus/phone_in_talk.png";
 import email1 from "../../assets/contactus/drafts.png";
@@ -11,6 +13,9 @@ import phone2 from "../../assets/contactus/call.png";
 import message from "../../assets/contactus/forum.png";
 import contactusimg from "../../assets/contactus/contactusimg.png";
 const Contactus = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <>
       <section className="contact_header_container">
@@ -26,7 +31,7 @@ const Contactus = () => {
           <img src={contactworld} alt=""></img>
         </div>
       </section>
-      <div className="getin_touch_title">
+      <div className="getin_touch_title" data-aos="fade-up">
         <h1>
           Get In<span> Touch</span>
         </h1>
@@ -40,7 +45,7 @@ const Contactus = () => {
       <section className="getin_touch_container">
         <div className="getin_touch_inner">
           <div className="getin_touch_leftside">
-            <div className="getin_touch_leftside_inner">
+            <div className="getin_touch_leftside_inner" data-aos="fade-up">
               <div>
                 <div className="getin_image">
                   <img src={phone1} alt=""></img>
@@ -73,7 +78,7 @@ const Contactus = () => {
             </div>
           </div>
           <div className="getin_touch_rightside">
-            <form className="getin_touch_rightside_inner">
+            <form className="getin_touch_rightside_inner" data-aos="fade-up">
               <div>
                 {" "}
                 <label>Full Name</label>
@@ -120,10 +125,10 @@ const Contactus = () => {
       </section>
       <section className="contactus_image_container">
         <div className="contactus_image_inner">
-          <div className="contactus_image">
+          <div className="contactus_image" data-aos="fade-up">
             <img src={contactusimg} alt=""></img>
           </div>
-          <div className="contactus_image_content">
+          <div className="contactus_image_content" data-aos="fade-up">
             <h1>
               BEST <span>SOFTWARE </span>TRAINING <span>INSTITUTE </span>IN
               BANGALORE
@@ -135,16 +140,16 @@ const Contactus = () => {
       <section className="footer_contactus_container">
         <div className="footer_contactus_inner">
           <div>
-            <h1>
+            <h1 data-aos="fade-up">
               Are you interested in taking your
               <span> embedded systems skill</span>s to the next level? Look no
             </h1>
-            <h1>
+            <h1 data-aos="fade-up">
               further than our advanced embedded course training institute!
             </h1>
           </div>
           <div>
-            <h2>
+            <h2 data-aos="fade-up">
                Our advanced embedded <span>course training institute</span>{" "}
               today and take your skills to the next level!  
             </h2>
@@ -152,7 +157,7 @@ const Contactus = () => {
         </div>
       </section>
       <section className="footer_location_container">
-        <div className="footer_location">
+        <div className="footer_location" data-aos="fade-up">
           <a href="">
             <div className="footer_location_address">
               {" "}

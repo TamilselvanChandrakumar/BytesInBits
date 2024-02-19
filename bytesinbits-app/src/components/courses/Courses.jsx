@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../courses/Courses.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -27,6 +27,9 @@ import star from "../../assets/keyfeatures/star.png";
 
 const Courses = () => {
   const [counterOn, seCountertOn] = useState(false);
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <>
       <div className="course_header_container">
@@ -62,7 +65,7 @@ const Courses = () => {
       </div>
       <section className="allcourses_container">
         <div className="allcourses_inner">
-          <div className="individual_course">
+          <div className="individual_course" data-aos="fade-up">
             <h3>Python</h3>
             <div className="individual_course_details">
               <p>
@@ -89,7 +92,7 @@ const Courses = () => {
               </button>
             </div>
           </div>
-          <div className="individual_course">
+          <div className="individual_course" data-aos="fade-up">
             <h3>Data Science</h3>
             <div className="individual_course_details">
               <p>
@@ -116,7 +119,7 @@ const Courses = () => {
               </button>
             </div>
           </div>
-          <div className="individual_course">
+          <div className="individual_course" data-aos="fade-up">
             <h3>Embedded</h3>
             <div className="individual_course_details">
               <p>
@@ -143,7 +146,7 @@ const Courses = () => {
               </button>
             </div>
           </div>
-          <div className="individual_course">
+          <div className="individual_course" data-aos="fade-up">
             <h3>IOT</h3>
             <div className="individual_course_details">
               <p>
@@ -170,7 +173,7 @@ const Courses = () => {
               </button>
             </div>
           </div>
-          <div className="individual_course">
+          <div className="individual_course" data-aos="fade-up">
             <h3>Cloud Computing</h3>
             <div className="individual_course_details">
               <p>
@@ -212,10 +215,10 @@ const Courses = () => {
       <div></div>
       <section className="build_contaienr">
         <div className="build_inner">
-          <div className="build_project_img">
+          <div className="build_project_img" data-aos="fade-up">
             <img src={lms} alt=""></img>
           </div>
-          <div className="build_project_content">
+          <div className="build_project_content" data-aos="fade-up">
             <p>
               <img className="build_img" src={buildimg}></img>
             </p>
@@ -236,7 +239,7 @@ const Courses = () => {
               </button>
             </div>
           </div>
-          <div className="build_project_content">
+          <div className="build_project_content" data-aos="fade-up">
             <p>
               <img className="build_img" src={buildimg}></img>
             </p>
@@ -256,13 +259,13 @@ const Courses = () => {
               </button>
             </div>
           </div>
-          <div className="build_project_img">
+          <div className="build_project_img" data-aos="fade-up">
             <img src={crm} alt=""></img>
           </div>
-          <div className="build_project_img">
+          <div className="build_project_img " data-aos="fade-up">
             <img src={hrms} alt=""></img>
           </div>
-          <div className="build_project_content">
+          <div className="build_project_content" data-aos="fade-up">
             <p>
               <img className="build_img" src={buildimg}></img>
             </p>
@@ -301,7 +304,7 @@ const Courses = () => {
       <section className="getjob_header">
         <div className="getjob_inner">
           <div className="getjob_content_container">
-            <div className="getjob_content">
+            <div className="getjob_content" data-aos="fade-up">
               <p>
                 <img src={github} alt=""></img>
               </p>
@@ -311,7 +314,7 @@ const Courses = () => {
                 profile to showcase technical projects and coding prowess.
               </p>
             </div>
-            <div className="getjob_content">
+            <div className="getjob_content" data-aos="fade-up">
               <p>
                 <img src={linkedin} alt=""></img>
               </p>
@@ -321,7 +324,7 @@ const Courses = () => {
                 networking and visibility among recruiters.
               </p>
             </div>
-            <div className="getjob_content">
+            <div className="getjob_content" data-aos="fade-up">
               <p>
                 <img src={resume} alt=""></img>
               </p>
@@ -331,7 +334,7 @@ const Courses = () => {
                 experience, and achievements.
               </p>
             </div>
-            <div className="getjob_content">
+            <div className="getjob_content" data-aos="fade-up">
               <p>
                 <img src={helpapply} alt=""></img>
               </p>
@@ -341,14 +344,14 @@ const Courses = () => {
                 the application process.
               </p>
             </div>
-            <div className="course_advisor">
+            <div className="course_advisor" data-aos="fade-up">
               <button className="course_advisor_btn">
                 {" "}
                 <img src={viewimg} alt=""></img>Contact Course Advisor
               </button>
             </div>
           </div>
-          <div className="course_getjob_image">
+          <div className="course_getjob_image" data-aos="fade-up">
             <img src={courseworld} alt=""></img>
           </div>
         </div>
@@ -392,7 +395,7 @@ const Courses = () => {
         style={{ marginBottom: "30px" }}
       >
         <div className="keyfeature_inner">
-          <div className="keyfeature">
+          <div className="keyfeature" data-aos="fade-up">
             <h2>
               <img src={star} alt=""></img>
               Real Time Practice Labs
@@ -402,7 +405,7 @@ const Courses = () => {
               Reverting and deploying is an atomic swap operation.
             </p>
           </div>
-          <div className="keyfeature">
+          <div className="keyfeature" data-aos="fade-up">
             <h2>
               <img src={docimg} alt=""></img>
               Physical And Virtual Online Classrooms
@@ -413,7 +416,7 @@ const Courses = () => {
               interrupt existing traffic as you ship.
             </p>
           </div>
-          <div className="keyfeature">
+          <div className="keyfeature" data-aos="fade-up">
             <h2>
               <img src={lightning} alt=""></img>
               24/7 Support On Slack
@@ -424,7 +427,7 @@ const Courses = () => {
               never slows down or sees errors.
             </p>
           </div>
-          <div className="keyfeature">
+          <div className="keyfeature" data-aos="fade-up">
             <h2>
               <img src={star} alt=""></img>
               Job & Interview Assistance
@@ -434,7 +437,7 @@ const Courses = () => {
               Reverting and deploying is an atomic swap operation.
             </p>
           </div>
-          <div className="keyfeature">
+          <div className="keyfeature" data-aos="fade-up">
             <h2>
               <img src={lightning} alt=""></img>
               Live Projects With Our Industry Partners
@@ -445,7 +448,7 @@ const Courses = () => {
               interrupt existing traffic as you ship.
             </p>
           </div>
-          <div className="keyfeature">
+          <div className="keyfeature" data-aos="fade-up">
             <h2>
               <img src={docimg} alt=""></img>
               Internship After Course

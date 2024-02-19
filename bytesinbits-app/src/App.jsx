@@ -1,7 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar.jsx";
@@ -23,7 +21,6 @@ function App() {
     document.documentElement.scrollTop = 0;
   };
   useEffect(() => {
-    AOS.init({ duration: 2000 });
     const handleScrollbar = () => {
       setTopToScroll(window.scrollY > 20);
     };

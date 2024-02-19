@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import founderimg from "../../../assets/courses/founderimg.png";
 import "../founderpage/Founder.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export const Founder = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <>
       <section className="founder_container">
@@ -15,7 +20,7 @@ export const Founder = () => {
                 {" "}
                 Futures From <span> Dreams</span>
               </h3>
-              <p>
+              <p data-aos="fade-up">
                 Muniraj Muniappan, cofounder of bytes-in-bits technology.
                 Bytes-in-bits is a software training institution; apart from
                 that, it works for the placement opportunity for the students.
@@ -26,11 +31,11 @@ export const Founder = () => {
                 gain a graduate degree. 
               </p>
             </div>
-            <div className="founder_image_container">
+            <div className="founder_image_container" data-aos="fade-up">
               <img src={founderimg} alt="founder_image"></img>
             </div>
           </div>
-          <div className="founder_content">
+          <div className="founder_content" data-aos="fade-up">
             <p>
               After 8 months, he joined as a hardware engineer. After a week
               that he realized that anyone can do the job. No such qualification
@@ -46,7 +51,7 @@ export const Founder = () => {
               While attending interviews, they can clear up to 2-3 rounds. This
               created confidence to move ahead in the industry of software.
             </p>
-            <p>
+            <p data-aos="fade-up">
               Yogeshwaran and Muniraj joined a small startup company. After
               joining the company, they came to know that there is a small gap
               between students’ skills and the company’s expectations. Training

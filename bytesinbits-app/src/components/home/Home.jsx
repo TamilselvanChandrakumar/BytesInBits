@@ -658,7 +658,7 @@ const Home = () => {
         </div>
       </section>
       <section className="last_content_container">
-        <div className="last_content_inner">
+        <div className="last_content_inner" data-aos="fade-up">
           <div className="last_content">
             <div className="last_content_title">
               <h1>Learn,</h1>
@@ -670,7 +670,7 @@ const Home = () => {
               enriched by real-time projects and job support.
             </p>
           </div>
-          <div className="last_button">
+          <div className="last_button" data-aos="fade-up">
             <button className="last_demo_btn">
               <img src={demoimg} alt="" />
               Demo
