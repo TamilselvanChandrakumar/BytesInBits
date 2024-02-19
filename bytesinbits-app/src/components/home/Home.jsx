@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../home/Home.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import contactimg from "../../assets/headerimg/contact.png";
@@ -33,6 +35,9 @@ import calendor from "../../assets/batchimg/calendor.png";
 import time from "../../assets/batchimg/time.png";
 const Home = () => {
   const [counterOn, seCountertOn] = useState(false);
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <>
       <header className="home_header_container">
@@ -68,7 +73,7 @@ const Home = () => {
       </header>
       <section className="company_card_container">
         <div className="company_card_inner">
-          <div className="company_card company_card1">
+          <div className="company_card company_card1" data-aos="fade-up">
             <h2>Best Qualified Tutors</h2>
             <div className="card_details">
               <p>
@@ -86,7 +91,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="company_card company_card2">
+          <div className="company_card company_card2" data-aos="fade-up">
             <h2>Student Support</h2>
             <div className="card_details">
               <p>
@@ -104,7 +109,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="company_card company_card3">
+          <div className="company_card company_card3" data-aos="fade-up">
             <h2>Career Growth</h2>
             <div className="card_details">
               <p>
@@ -125,7 +130,7 @@ const Home = () => {
       </section>
       <section className="home_course_container">
         <div className="home_course_inner">
-          <div className="home_course home_course_1">
+          <div className="home_course home_course_1" data-aos="fade-up">
             <h2>Advance Embedded System</h2>
             <p>
               Advanced Embedded System Programming is a course designed for
@@ -134,7 +139,7 @@ const Home = () => {
             </p>
             <img src={golink} alt=""></img>
           </div>
-          <div className="home_course home_course_2">
+          <div className="home_course home_course_2" data-aos="fade-up">
             <h2>Python FullStack Training</h2>
             <p>
               Python Programming is a high-level, interpreted programming
@@ -144,7 +149,7 @@ const Home = () => {
             </p>
             <img src={golink} alt=""></img>
           </div>
-          <div className="home_course home_course_3">
+          <div className="home_course home_course_3" data-aos="fade-up">
             <h2>Best Qualified Tutors</h2>
             <p>
               Explore the power of MATLAB with our comprehensive course. Learn
@@ -160,7 +165,7 @@ const Home = () => {
       </section>
       <section className="allcourses_container">
         <div className="allcourses_inner">
-          <div className="individual_course">
+          <div className="individual_course" data-aos="fade-up">
             <h3>Python</h3>
             <div className="individual_course_details">
               <p>
@@ -187,7 +192,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="individual_course">
+          <div className="individual_course" data-aos="fade-up">
             <h3>Data Science</h3>
             <div className="individual_course_details">
               <p>
@@ -214,7 +219,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="individual_course">
+          <div className="individual_course" data-aos="fade-up">
             <h3>Embedded</h3>
             <div className="individual_course_details">
               <p>
@@ -241,7 +246,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="individual_course">
+          <div className="individual_course" data-aos="fade-up">
             <h3>IOT</h3>
             <div className="individual_course_details">
               <p>
@@ -268,7 +273,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="individual_course">
+          <div className="individual_course" data-aos="fade-up">
             <h3>Cloud Computing</h3>
             <div className="individual_course_details">
               <p>
@@ -471,7 +476,7 @@ const Home = () => {
       </div>
       <section className="keyfeature_container">
         <div className="keyfeature_inner">
-          <div className="keyfeature">
+          <div className="keyfeature" data-aos="fade-up">
             <h2>
               <img src={star} alt=""></img>
               Real Time Practice Labs
@@ -481,7 +486,7 @@ const Home = () => {
               Reverting and deploying is an atomic swap operation.
             </p>
           </div>
-          <div className="keyfeature">
+          <div className="keyfeature" data-aos="fade-up">
             <h2>
               <img src={docimg} alt=""></img>
               Physical And Virtual Online Classrooms
@@ -492,7 +497,7 @@ const Home = () => {
               interrupt existing traffic as you ship.
             </p>
           </div>
-          <div className="keyfeature">
+          <div className="keyfeature" data-aos="fade-up">
             <h2>
               <img src={lightning} alt=""></img>
               24/7 Support On Slack
@@ -503,7 +508,7 @@ const Home = () => {
               never slows down or sees errors.
             </p>
           </div>
-          <div className="keyfeature">
+          <div className="keyfeature" data-aos="fade-up">
             <h2>
               <img src={star} alt=""></img>
               Job & Interview Assistance
@@ -513,7 +518,7 @@ const Home = () => {
               Reverting and deploying is an atomic swap operation.
             </p>
           </div>
-          <div className="keyfeature">
+          <div className="keyfeature" data-aos="fade-up">
             <h2>
               <img src={lightning} alt=""></img>
               Live Projects With Our Industry Partners
@@ -524,7 +529,7 @@ const Home = () => {
               interrupt existing traffic as you ship.
             </p>
           </div>
-          <div className="keyfeature">
+          <div className="keyfeature" data-aos="fade-up">
             <h2>
               <img src={docimg} alt=""></img>
               Internship After Course
@@ -542,7 +547,7 @@ const Home = () => {
       </div>
       <section className="batch_container">
         <div className="batch_inner">
-          <div className="batch">
+          <div className="batch" data-aos="fade-up">
             <div className="batch_title">
               {" "}
               <h2>Week Day Batches</h2>
@@ -576,7 +581,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="batch">
+          <div className="batch" data-aos="fade-up">
             <div className="batch_title">
               <h2>Week Day Batches</h2>
               <p>(Mon-Fri)</p>
@@ -610,7 +615,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="batch">
+          <div className="batch" data-aos="fade-up">
             <div className="batch_title">
               <h2>Week Day Batches</h2>
               <p>(Mon-Fri)</p>
@@ -642,7 +647,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="batch_card">
+          <div className="batch_card" data-aos="fade-up">
             <h2>Can’t find a batch you were looking for?</h2>
             <div className="batch_btn">
               <button>
