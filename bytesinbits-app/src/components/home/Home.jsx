@@ -307,10 +307,10 @@ const Home = () => {
       </div>
       <section className="build_contaienr">
         <div className="build_inner">
-          <div className="build_project_img">
+          <div className="build_project_img" data-aos="fade-up">
             <img src={lms} alt=""></img>
           </div>
-          <div className="build_project_content">
+          <div className="build_project_content" data-aos="fade-up">
             <p>
               <img className="build_img" src={buildimg}></img>
             </p>
@@ -331,7 +331,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="build_project_content">
+          <div className="build_project_content" data-aos="fade-up">
             <p>
               <img className="build_img" src={buildimg}></img>
             </p>
@@ -351,13 +351,13 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="build_project_img">
+          <div className="build_project_img" data-aos="fade-up">
             <img src={crm} alt=""></img>
           </div>
-          <div className="build_project_img">
+          <div className="build_project_img" data-aos="fade-up">
             <img src={hrms} alt=""></img>
           </div>
-          <div className="build_project_content">
+          <div className="build_project_content" data-aos="fade-up">
             <p>
               <img className="build_img" src={buildimg}></img>
             </p>
@@ -385,7 +385,7 @@ const Home = () => {
       <section className="getjob_header">
         <div className="getjob_inner">
           <div className="getjob_content_container">
-            <div className="getjob_content">
+            <div className="getjob_content" data-aos="fade-up">
               <p>
                 <img src={github} alt=""></img>
               </p>
@@ -395,7 +395,7 @@ const Home = () => {
                 profile to showcase technical projects and coding prowess.
               </p>
             </div>
-            <div className="getjob_content">
+            <div className="getjob_content" data-aos="fade-up">
               <p>
                 <img src={linkedin} alt=""></img>
               </p>
@@ -405,7 +405,7 @@ const Home = () => {
                 networking and visibility among recruiters.
               </p>
             </div>
-            <div className="getjob_content">
+            <div className="getjob_content" data-aos="fade-up">
               <p>
                 <img src={resume} alt=""></img>
               </p>
@@ -415,7 +415,7 @@ const Home = () => {
                 experience, and achievements.
               </p>
             </div>
-            <div className="getjob_content">
+            <div className="getjob_content" data-aos="fade-up">
               <p>
                 <img src={helpapply} alt=""></img>
               </p>
