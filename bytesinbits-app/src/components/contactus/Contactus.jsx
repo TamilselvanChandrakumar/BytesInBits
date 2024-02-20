@@ -13,6 +13,9 @@ import phone2 from "../../assets/contactus/call.png";
 import message from "../../assets/contactus/forum.png";
 import contactusimg from "../../assets/contactus/contactusimg.png";
 const Contactus = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   useEffect(() => {
     AOS.init({ duration: 2000 });
   });
@@ -78,15 +81,23 @@ const Contactus = () => {
             </div>
           </div>
           <div className="getin_touch_rightside">
-            <form className="getin_touch_rightside_inner" data-aos="fade-up">
+            <form
+              className="getin_touch_rightside_inner"
+              data-aos="fade-up"
+              onSubmit={handleSubmit}
+            >
               <div>
                 {" "}
                 <label>Full Name</label>
                 <div className="fullname_input">
                   <img src={account} alt=""></img>
                   <div className="fullname_inner">
-                    <input placeholder="First Name" type="text"></input>
-                    <input placeholder="Last Name" type="text"></input>
+                    <input
+                      placeholder="First Name"
+                      type="text"
+                      required
+                    ></input>
+                    <input placeholder="Last Name" type="text" required></input>
                   </div>
                 </div>
               </div>
@@ -94,7 +105,11 @@ const Contactus = () => {
                 <label>Email Address</label>
                 <div className="input_image">
                   <img src={email2} alt=""></img>{" "}
-                  <input type="email" placeholder="Email Address"></input>
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                  ></input>
                 </div>
               </div>
               <div>
@@ -102,7 +117,11 @@ const Contactus = () => {
 
                 <div className="input_image">
                   <img src={phone2} alt=""></img>{" "}
-                  <input type="phone" placeholder="Mobile Number"></input>
+                  <input
+                    type="phone"
+                    placeholder="Mobile Number"
+                    required
+                  ></input>
                 </div>
               </div>
               <div>
@@ -113,6 +132,7 @@ const Contactus = () => {
                   <textarea
                     type="text-area"
                     placeholder="Your Message"
+                    required
                   ></textarea>
                 </div>
               </div>
