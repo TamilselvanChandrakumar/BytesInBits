@@ -94,6 +94,9 @@
 .footer_social_links a {
   text-decoration: none;
 }
+.footer_social_links a:hover {
+  border-bottom: none;
+}
 .footer_signup_btn {
   display: flex;
   align-items: center;
