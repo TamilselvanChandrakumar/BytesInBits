@@ -351,7 +351,7 @@ const Courses = () => {
               </button>
             </div>
           </div>
-          <div className="course_getjob_image" data-aos="fade-up">
+          <div className="course_getjob_image">
             <img src={courseworld} alt=""></img>
           </div>
         </div>
